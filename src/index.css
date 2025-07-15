@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+body,
+html {
+  overflow-x: hidden !important;
+}
+
+@theme {
+  --color-soft-gray: #E8E8E8;
+  --color-off-white: #FEFEFE;
+  --color-on-white: #EFEFEF;
+  --color-near-black: #010101;
+  --color-mid-gray: #575757;
+  --color-light-gray: #C1C1C1;
+  --color-lighter-gray: #E1E1E1;
+  --color-dark-gray: #4D4D4D;
+  --color-muted-gray: #787878;
+  --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.bg-prime {
+  background: var(--color-prime-gradient);
+}
+
+.text-prime-gradient {
+  background: var(--color-prime-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
