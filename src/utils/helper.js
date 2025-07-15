@@ -4,7 +4,7 @@ import pizzaImg3 from "../assets/images/png/best-seller-img-3.png";
 import pizzaImg4 from "../assets/images/png/best-seller-img-4.png";
 import limitedOfferPizza1 from "../assets/images/png/limited-offer-pizza-1.png";
 import limitedOfferPizza2 from "../assets/images/png/limited-offer-pizza-2.png";
-import { ChefSvg, QualitySvg, SupportSvg } from "./icon";
+import { ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
 
 export const NAVLINKS = [
     "Home",
@@ -68,4 +68,27 @@ export const BESTSELLER_DATA = [
         title: "Masala Paneer",
         description: "Masala-marinated paneer, sautéed onions, green & red capsicum, mozzarella cheese"
     },
+]
+
+export const SOCIAL_ICON = [
+    {
+        icon: FacebookSvg,
+        socialLink: "https://www.facebook.com"
+    },
+    {
+        icon: InstaSvg,
+        socialLink: "https://www.instagram.com"
+    },
+    {
+        icon: LinkdinSvg,
+        socialLink: "https://www.linkedin.com"
+    }
+]
+
+export const QUICK_LINKS = [
+    "Home", "About Us", "Menu", "Gallery", "Testimonial", "Contact"
+]
+
+export const SUPPORT_LINKS = [
+    "Terms & Conditions", "Privacy Policy"
 ]
