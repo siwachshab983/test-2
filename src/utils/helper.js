@@ -14,7 +14,7 @@ import galleryImg4 from "../assets/images/png/gallery-img-4.png";
 import galleryImg5 from "../assets/images/png/gallery-img-5.png";
 import galleryImg6 from "../assets/images/png/gallery-img-6.png";
 import galleryImg7 from "../assets/images/png/gallery-img-7.png";
-import { ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
+import { Check, ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
 
 export const NAVLINKS = [
     "Home",
@@ -143,4 +143,25 @@ export const GALLERY_DATA = [
     galleryImg5,
     galleryImg6,
     galleryImg7,
+]
+
+export const FOODDELIVERY = [
+    {
+        icon: Check,
+        info: '30-Minute Delivery Promise',
+    },
+    {
+        icon: Check,
+        info: 'Hygienic, Contactless Delivery',
+    },
+    {
+        icon: Check,
+        info: 'Real-time Order Tracking',
+    },
+    {
+        icon: Check,
+        info: 'Eco-Friendly Packaging',
+    },
+
+
 ]
