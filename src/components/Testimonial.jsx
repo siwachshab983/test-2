@@ -1,108 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Container from "./common/Container";
+import Heading from "./common/Heading";
+import { LeftArrow, Line, RightArrow } from "../utils/icon";
+import pizzaImg from "../assets/images/png/testimonial-pizza-img.png";
+import { TESTIMONIAL_AVATAR } from "../utils/helper";
+import Button from "./common/Button";
+import Description from "./common/Description";
 
 const testimonials = [
   {
-    image: "https://source.unsplash.com/400x400/?paneer-pizza",
     text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
     name: "Aarav Mehta",
     role: "Software Developer",
-    avatars: [
-      "https://randomuser.me/api/portraits/women/1.jpg",
-      "https://randomuser.me/api/portraits/men/2.jpg",
-      "https://randomuser.me/api/portraits/women/3.jpg",
-    ],
   },
   {
-    image: "https://source.unsplash.com/400x400/?paneer-pizza",
     text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
     name: "Aarav Mehta",
     role: "Software Developer",
-    avatars: [
-      "https://randomuser.me/api/portraits/women/1.jpg",
-      "https://randomuser.me/api/portraits/men/2.jpg",
-      "https://randomuser.me/api/portraits/women/3.jpg",
-    ],
   },
   {
-    image: "https://source.unsplash.com/400x400/?paneer-pizza",
     text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
     name: "Aarav Mehta",
     role: "Software Developer",
-    avatars: [
-      "https://randomuser.me/api/portraits/women/1.jpg",
-      "https://randomuser.me/api/portraits/men/2.jpg",
-      "https://randomuser.me/api/portraits/women/3.jpg",
-    ],
   },
-  // Add more testimonial objects here as needed
 ];
 
 const Testimonial = () => {
+  const [activeAvatar, setActiveAvatar] = useState(1);
+
   return (
     <div className="relative px-5 py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
-      <Container>
-        <div className="text-center mb-14">
-          <p className="text-orange-500 font-semibold text-sm">Testimonial</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-black">
-            What Our Customers Say
-          </h2>
+      <Container className={'relative'}>
+        <div className=" flex justify-center items-center gap-1.5">
+          <div className="">
+            <Line />
+          </div>
+          <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Testimonial</h4>
+          <div className=" rotate-[180deg]">
+            <Line />
+          </div>
         </div>
+        <Heading className={'font-semibold text-[48px] text-center mx-auto max-w-[569px] !leading-[120%]  mt-2 mb-15'}>What Our Customers Say</Heading>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        <div className="flex flex-col md:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
           {/* Left: Image & Avatars (Static) */}
-          <div className="relative">
+          <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10 ">
             <img
-              src={testimonials[0].image}
+              src={pizzaImg}
               alt="Pizza"
-              className="w-[300px] md:w-[360px] rounded-xl object-cover"
+              className="w-full sm:flex hidden rounded-xl object-cover "
             />
-            <div className="absolute left-[-36px] top-1/2 -translate-y-1/2 flex flex-col gap-3">
-              {testimonials[0].avatars.map((avatar, i) => (
+            <div className="sm:absolute left-[-36px] top-[145px] flex sm:flex-col max-sm:w-full justify-center  items-center size-[74px] gap-3">
+              {TESTIMONIAL_AVATAR.map((avatar, i) => (
                 <img
                   key={i}
                   src={avatar}
                   alt={`avatar-${i}`}
-                  className="w-10 h-10 rounded-full border-2 border-white shadow-md"
+                  onClick={() => setActiveAvatar(i)}
+                  className={`cursor-pointer rounded-full transition-all duration-300 ${i === activeAvatar ? 'sm:size-[74px] size-25' : 'sm:size-15 size-20'
+                    }`}
                 />
               ))}
             </div>
           </div>
-
-          {/* Right: Swiper for Text Only */}
-          <Swiper
-            modules={[Navigation]}
-            navigation={{
-              nextEl: ".nextBtn",
-              prevEl: ".prevBtn",
-            }}
-            className="relative max-w-xl w-full"
-          >
-            {testimonials.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 w-full relative">
-                  <p className="text-gray-700 mb-4 leading-relaxed">{item.text}</p>
-                  <h4 className="font-semibold text-lg text-black">{item.name}</h4>
-                  <p className="text-sm text-gray-500">{item.role}</p>
-
-                  {/* Navigation Arrows */}
-                  <div className="absolute bottom-6 right-6 flex items-center gap-3">
-                    <button className="prevBtn w-8 h-8 rounded-md border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
-
-                    </button>
-                    <button className="nextBtn w-8 h-8 rounded-md bg-orange-500 text-white flex items-center justify-center hover:bg-orange-600 transition">
-
-                    </button>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
+        <Swiper
+          modules={[Navigation]}
+          loop={true}
+          navigation={{
+            nextEl: ".nextBtn",
+            prevEl: ".prevBtn",
+          }}
+          className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full"
+        >
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="bg-white rounded-xl shadow-lg p-6 w-full relative">
+                <Description className="text-gray-700 mb-4 !leading-[26px]">{item.text}</Description>
+                <h4 className="font-semibold text-2xl text-black mt-4 mb-0.5">{item.name}</h4>
+                <p className="text-base leading-[26px] mb-6">{item.role}</p>
+                <div className="flex items-center gap-1 ">
+                  <Button className="prevBtn hover:!bg-none group hover:!bg-[#EEEEEE] !rounded-[4px] border !px-[15px] !py-3.5 flex items-center justify-center transition">
+                    <RightArrow />
+                  </Button>
+                  <Button className="nextBtn hover:!bg-none group hover:!bg-[#EEEEEE] !rounded-[4px] text-white flex items-center justify-center !px-[15px] !py-3.5 transition">
+                    <LeftArrow />
+                  </Button>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </Container>
     </div>
   );

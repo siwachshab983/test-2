@@ -14,6 +14,9 @@ import galleryImg4 from "../assets/images/png/gallery-img-4.png";
 import galleryImg5 from "../assets/images/png/gallery-img-5.png";
 import galleryImg6 from "../assets/images/png/gallery-img-6.png";
 import galleryImg7 from "../assets/images/png/gallery-img-7.png";
+import userAvatar1 from "../assets/images/png/testimonial-user-img-1.png";
+import userAvatar2 from "../assets/images/png/testimonial-user-img-2.png";
+import userAvatar3 from "../assets/images/png/testimonial-user-img-3.png";
 import { Check, ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
 
 export const NAVLINKS = [
@@ -163,5 +166,10 @@ export const FOODDELIVERY = [
         info: 'Eco-Friendly Packaging',
     },
 
+]
 
+export const TESTIMONIAL_AVATAR = [
+    userAvatar1,
+    userAvatar2,
+    userAvatar3
 ]
