@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="max-w-[1140px] mx-auto">
           <div className="flex max-md:flex-col justify-between gap-10 md:gap-20">
             <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">
-              <Heading className={'text-prime-gradient font-nunitosans font-medium text-[34px] !leading-[63px]'}>
+              <Heading className={'text-prime-gradient font-medium text-[42px] !leading-[63px]'}>
                 Pizza Nest
               </Heading>
               <Description className="text-[#575757] pt-3">At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference.</Description>

@@ -16,7 +16,9 @@ html {
   --color-lighter-gray: #E1E1E1;
   --color-dark-gray: #4D4D4D;
   --color-muted-gray: #787878;
-  --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  --color-unmuted-gray: #5C5C5C;
+  --color-black: #010101;
+  --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46% );
 }
 
 * {
@@ -24,11 +26,28 @@ html {
 }
 
 .bg-prime {
-  background: var(--color-prime-gradient);
+  background: var(--color-prime-gradient) !important ;
 }
 
 .text-prime-gradient {
   background: var(--color-prime-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.btn-blur::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #FEFEFE0F;
+  backdrop-filter: blur(30.9px);
+  -webkit-backdrop-filter: blur(30.9px);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-blur:hover::after {
+  opacity: 1;
 }

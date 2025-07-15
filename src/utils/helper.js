@@ -4,6 +4,9 @@ import pizzaImg3 from "../assets/images/png/best-seller-img-3.png";
 import pizzaImg4 from "../assets/images/png/best-seller-img-4.png";
 import limitedOfferPizza1 from "../assets/images/png/limited-offer-pizza-1.png";
 import limitedOfferPizza2 from "../assets/images/png/limited-offer-pizza-2.png";
+import ourMenuPizza1 from "../assets/images/png/our-menu-pizza-1.png";
+import ourMenuPizza2 from "../assets/images/png/our-menu-pizza-2.png";
+import ourMenuPizza3 from "../assets/images/png/our-menu-pizza-3.png";
 import { ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
 
 export const NAVLINKS = [
@@ -92,3 +95,35 @@ export const QUICK_LINKS = [
 export const SUPPORT_LINKS = [
     "Terms & Conditions", "Privacy Policy"
 ]
+export const MENU_DATA = [
+    {
+        title1: "Farmhouse Magic1",
+        title2: "Farmhouse Magic2",
+        title3: "Farmhouse Magic3",
+        title4: "Farmhouse Magic4",
+        title5: "Farmhouse Magic5",
+        price: "₹229 / ₹359 / ₹499",
+        desc: "Onion, capsicum, tomato, grilled mushroom, mozzarella cheese",
+        image: ourMenuPizza1
+    },
+    {
+        title1: "Masala Paneer1",
+        title2: "Masala Paneer2",
+        title3: "Masala Paneer3",
+        title4: "Masala Paneer4",
+        title5: "Masala Paneer5",
+        price: "₹279 / ₹399 / ₹519",
+        desc: "Masala-marinated paneer, sautéed onions, capsicum, mozzarella cheese",
+        image: ourMenuPizza2
+    },
+    {
+        title1: "Solo Meal Combo1",
+        title2: "Solo Meal Combo2",
+        title3: "Solo Meal Combo3",
+        title4: "Solo Meal Combo4",
+        title5: "Solo Meal Combo5",
+        price: "₹379",
+        desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+        image: ourMenuPizza3
+    },
+];

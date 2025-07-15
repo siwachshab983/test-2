@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, key, onClick }) => {
   return (
-    <button className={`${className} px-8 py-4 bg-prime font-nunitosans hover:text-prime-gradient border border-transparent hover:border-black text-base font-semibold rounded-xl cursor-pointer text-white !leading-[137%]`}>
+    <button key={key} onClick={onClick} className={` px-8 py-4 bg-prime hover:text-off-white border border-transparent hover:border-white btn-blur relative z-10 duration-300 text-base font-semibold rounded-xl cursor-pointer text-white !leading-[137%] ${className}`}>
       {children}
-   </button>
+    </button>
   )
 }
 
