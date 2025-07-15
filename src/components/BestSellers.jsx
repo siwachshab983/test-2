@@ -8,7 +8,7 @@ import { Line } from '../utils/icon';
 const BestSellers = () => {
   return (
     <>
-      <div className="px-5 py-25 bg-[url(../src/assets/images/png/bestseller-bg-img.png)]">
+      <div className="px-5 py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
         <div className="max-w-[1140px] mx-auto">
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">

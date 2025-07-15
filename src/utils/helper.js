@@ -2,6 +2,8 @@ import pizzaImg1 from "../assets/images/png/best-seller-img-1.png";
 import pizzaImg2 from "../assets/images/png/best-seller-img-2.png";
 import pizzaImg3 from "../assets/images/png/best-seller-img-3.png";
 import pizzaImg4 from "../assets/images/png/best-seller-img-4.png";
+import limitedOfferPizza1 from "../assets/images/png/limited-offer-pizza-1.png";
+import limitedOfferPizza2 from "../assets/images/png/limited-offer-pizza-2.png";
 import { ChefSvg, QualitySvg, SupportSvg } from "./icon";
 
 export const NAVLINKS = [
@@ -25,6 +27,22 @@ export const ABOUT_US_CARDS_DATA = [
         title: "Online Support"
     }
 ]
+
+export const LIMITEDOFFER_DATA = [
+    {
+        title: "SPICY PANEER",
+        text: "Only",
+        price: "₹199",
+        img: limitedOfferPizza1,
+    },
+    {
+        title: "CHEESE BURST",
+        text: "Only",
+        price: "₹299",
+        img: limitedOfferPizza2,
+    }
+]
+
 export const BESTSELLER_DATA = [
     {
         img: pizzaImg1,
