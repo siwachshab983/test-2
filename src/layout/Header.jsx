@@ -30,7 +30,7 @@ const Header = () => {
                 <NavLink
                   to={path}
                   className={({ isActive }) =>
-                    `relative px-1 font-nunito text-base group-hover:!text-prime-gradient
+                    `relative font-nunito text-base group-hover:!text-prime-gradient
             ${isActive ? "text-prime-gradient after:w-full" : "text-muted-gray"}
             after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[.5px] after:rounded-full
             after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
@@ -42,10 +42,10 @@ const Header = () => {
               </li>
             );
           })}
-          <li className='flex sm:hidden'><Button>Contact Us</Button></li>
+          <li className='flex sm:hidden'><Button className={'hover:!bg-none hover:!border-light-gray hover:!text-light-gray'}>Contact Us</Button></li>
         </ul>
         <div className="flex justify-center items-center gap-5">
-          <div className="sm:flex hidden"><Button>Contact Us</Button></div>
+          <div className="sm:flex hidden"><Button className={'hover:!bg-none hover:!border-light-gray hover:!text-light-gray'}>Contact Us</Button></div>
           <div
             onClick={toggleNavBar}
             className="lg:hidden flex flex-col gap-[5px] z-50 cursor-pointer"
