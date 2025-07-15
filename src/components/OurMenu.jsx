@@ -36,10 +36,10 @@ const OurMenu = () => {
           </div>
         </div>
         <Heading className="text-center mt-2 text-5xl !leading-[120%] mb-10 max-w-[550px] w-full" >Explore Flavours, Pick Your Cravings</Heading>
-        <div className="flex flex-wrap justify-center space-x-2 mb-10 w-full">
-          {categories.map(category => (
+        <div className="flex flex-wrap justify-center gap-6 mb-10 w-full">
+          {categories.map((category, i) => (
             <Button
-              key={category}
+              key={i}
               onClick={() => setActiveCategory(category)}
               className={`!px-5 !py-[9px] max-w-[170px] !leading-[22px] w-full rounded-full border
     ${activeCategory === category

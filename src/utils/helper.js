@@ -7,6 +7,13 @@ import limitedOfferPizza2 from "../assets/images/png/limited-offer-pizza-2.png";
 import ourMenuPizza1 from "../assets/images/png/our-menu-pizza-1.png";
 import ourMenuPizza2 from "../assets/images/png/our-menu-pizza-2.png";
 import ourMenuPizza3 from "../assets/images/png/our-menu-pizza-3.png";
+import galleryImg1 from "../assets/images/png/gallery-img-1.png";
+import galleryImg2 from "../assets/images/png/gallery-img-2.png";
+import galleryImg3 from "../assets/images/png/gallery-img-3.png";
+import galleryImg4 from "../assets/images/png/gallery-img-4.png";
+import galleryImg5 from "../assets/images/png/gallery-img-5.png";
+import galleryImg6 from "../assets/images/png/gallery-img-6.png";
+import galleryImg7 from "../assets/images/png/gallery-img-7.png";
 import { ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
 
 export const NAVLINKS = [
@@ -127,3 +134,13 @@ export const MENU_DATA = [
         image: ourMenuPizza3
     },
 ];
+
+export const GALLERY_DATA = [
+    galleryImg1,
+    galleryImg2,
+    galleryImg3,
+    galleryImg4,
+    galleryImg5,
+    galleryImg6,
+    galleryImg7,
+]
