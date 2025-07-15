@@ -16,8 +16,8 @@ const Hero = () => {
           <Description className={'text-off-white mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
             your perfect slice, or choose from our signature favorites</Description>
           <div className="flex flex-col sm:flex-row gap-6 mb-6">
-            <Button>Order Now</Button>
-            <Button className={''}>View Full Menu</Button>
+            <Button className={'hover:!bg-none'}>Order Now</Button>
+            <Button className={'!bg-none btn-blur-opacity-1 border-white'}>View Full Menu</Button>
           </div>
           <div className="flex flex-col gap-y-2 sm:flex-row items-center">
             <div className="max-w-[155px] w-full">
