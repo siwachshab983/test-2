@@ -71,7 +71,7 @@ const OurMenu = () => {
         </div>
         <Button className={'mt-[3px] !leading-[22px]'}>View More</Button>
       </Container>
-      <img className="absolute pointer-events-none left-0 top-[30px]" src={pizzaSlice} alt="" />
+      <img className="absolute pointer-events-none md:flex hidden left-0 top-[30px]" src={pizzaSlice} alt="" />
     </div>
   );
 };

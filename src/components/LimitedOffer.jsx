@@ -32,7 +32,7 @@ const LimitedOffer = () => {
               </div>
             ))}
           </div>
-          <img className='pointer-events-none absolute -right-[235px] sm:flex hidden md:w-[409px] w-[350px] -bottom-[159px] opacity-60' src={tomatoImg} alt="tomatoImg" />
+          <img className='pointer-events-none absolute md:flex hidden -right-[235px] md:w-[409px] w-[350px] -bottom-[159px] opacity-60' src={tomatoImg} alt="tomatoImg" />
         </Container>
       </div>
     </>

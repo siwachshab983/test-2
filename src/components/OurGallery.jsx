@@ -69,7 +69,7 @@ const OurGallery = () => {
           <div className="flex sm:hidden justify-center items-center w-full md:gap-6 gap-4">
             {
               GALLERY_DATA.slice(3, 4).map((image, i) => (
-                <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group">
+                <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group w-full">
                   <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
                 </div>
               ))
@@ -96,8 +96,8 @@ const OurGallery = () => {
             </div>
           </div>
         </div>
-        <Button className={'mt-8 !leading-[22px]'}>View More</Button>
-        <img className="absolute right-0 -top-15" src={pizzaSlice} alt="" />
+        <Button className={'mt-8 !leading-[22px] sm:max-w-none max-w-[400px] max-sm:w-full'}>View More</Button>
+        <img className="absolute md:flex hidden right-0 -top-15" src={pizzaSlice} alt="" />
       </Container>
     </div>
   )

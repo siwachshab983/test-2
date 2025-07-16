@@ -60,7 +60,7 @@ const Testimonial = () => {
             className="shadow-[0px_4px_15.4px_0px_#0000000F] bg-white rounded-xl  lg:max-w-[680px] max-[455px]:min-h-[360px] min-h-[310px] sm:min-h-[298px]">
             {TESTIMONIAL_DATA.map((item, index) => (
               <SwiperSlide className="p-4 md:p-6" key={index}>
-                <div >
+                <div className="sm:text-start text-center" >
                   <Description className="text-mud-gray">{item.text}</Description>
                   <h3 className='text-2xl leading-[140%] font-semibold pt-4'>{item.name}</h3>
                   <Description className="text-mud-gray pt-[2px]">{item.role}</Description>
@@ -68,7 +68,7 @@ const Testimonial = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="flex items-center absolute z-10 bottom-6 left-6 mt-6 gap-1">
+          <div className="flex items-center absolute z-10 bottom-6 sm:left-6 mt-6 gap-1 left-1/2 max-sm:-translate-x-1/2">
             <Button className="prevBtn hover:!bg-none group hover:!bg-light-white hover:!scale-100 !rounded-[4px] border !px-[15px] !py-3.5 flex items-center justify-center transition">
               <RightArrow />
             </Button>

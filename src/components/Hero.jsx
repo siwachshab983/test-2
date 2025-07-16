@@ -7,19 +7,19 @@ import { ArrowLine } from '../utils/icon'
 
 const Hero = () => {
   return (
-    <div className='max-w-[1440px] bg-off-white sm:px-10 px-5 w-full mx-auto'>
+    <div className='max-w-[1440px]  bg-off-white sm:px-10 px-5 w-full mx-auto'>
       <div className="bg-[url(./assets/images/png/hero.png)] relative bg-no-repeat bg-center bg-cover flex flex-col items-center w-full md:min-h-[710px] rounded-3xl pt-10 px-5 pb-[185px]">
         <div className="max-w-[593px] w-full md:absolute top-[131px] xl:left-[110px] left-[75px]">
-          <Heading className="font-bold !leading-[120%] font-nunitosans text-[32px] sm:text-[40px] md:text-custom-3xl md:text-5xl sm:text-4xl  lg:text-[64px] text-white">
+          <Heading className="sm:text-start text-center font-bold !leading-[120%] font-nunitosans text-4xl sm:text-[40px] md:text-5xl lg:text-[64px] text-white">
             Where Every Slice Feels Like Home
           </Heading>
-          <Description className={'text-on-white mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
+          <Description className={'text-on-white sm:text-start text-center mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
             your perfect slice, or choose from our signature favorites</Description>
-          <div className="flex flex-col sm:flex-row gap-6 mb-6">
-            <Button className={'!py-[15px]'}>Order Now</Button>
-            <Button className={'!bg-none btn-blur-opacity-1 !py-[15px] border border-white'}>View Full Menu</Button>
+          <div className="flex flex-col sm:flex-row gap-6 mb-6 max-sm:max-w-[400px] max-sm:mx-auto w-full justify-center items-center">
+            <Button className={'!py-[15px] max-sm:w-full'}>Order Now</Button>
+            <Button className={'!bg-none max-sm:w-full btn-blur-opacity-1 !py-[15px] border border-white'}>View Full Menu</Button>
           </div>
-          <div className="flex flex-col gap-y-2 sm:flex-row items-center">
+          <div className="flex flex-col gap-y-2 max-sm:mx-auto sm:flex-row items-center max-sm:max-w-[400px] w-full justify-center">
             <div className="max-w-[155px] w-full">
               <h4 className='font-nunito mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]' >5,000+</h4>
               <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[26px] w-full'> Pizzas Delivered</p>
