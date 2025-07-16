@@ -10,7 +10,7 @@ const AboutUs = () => {
     return (
         <>
             <div id='about-us' className="px-5 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center py-[50px] md:pt-25 md:pb-[49px] relative">
-                <img className='absolute pointer-events-none md:flex hidden left-0 bottom-0 max-xl:w-full max-xl:max-w-[100px]' src={pizzaSlice} alt="pizza-slice" />
+                <img className='absolute pizza-cheese pointer-events-none md:flex hidden left-0 bottom-0 max-xl:w-full max-xl:max-w-[100px]' src={pizzaSlice} alt="pizza-slice" />
                 <div className="max-w-[1114px] mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between lg:min-h-[637px]">
                         <div className="lg:max-w-[558px]">

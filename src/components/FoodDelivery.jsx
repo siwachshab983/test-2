@@ -47,7 +47,7 @@ const FoodDelivery = () => {
           <img src={image} alt="image" className='lg:max-w-[612px] md:max-w-[500px] max-w-[400px] w-full block mx-auto pointer-events-none' />
         </div>
       </Container>
-      <img className='pointer-events-none absolute xl:-left-[235px] -left-[200px] md:flex hidden xl:w-[409px] w-[350px] -bottom-[126px] opacity-60' src={tomatoImg} alt="tomatoImg" />
+      <img className='pointer-events-none tomato-pop absolute xl:-left-[235px] -left-[200px] md:flex hidden xl:w-[409px] w-[350px] -bottom-[126px] opacity-60' src={tomatoImg} alt="tomatoImg" />
     </div>
   )
 }

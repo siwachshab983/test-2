@@ -6,7 +6,7 @@ html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   max-width: 1920px;
-  width:100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,7 +26,7 @@ html {
   --color-mud-gray: #545454;
   --color-dark-mud-gray: #373737;
   --color-black: #010101;
-  --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46% );
+  --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
   --text-custom-3xl: 28px;
 }
 
@@ -35,10 +35,11 @@ html {
 }
 
 .bg-prime {
-  background: var(--color-prime-gradient) !important ;
+  background: var(--color-prime-gradient) !important;
 }
+
 .bg-prime-hover:hover {
-  background: var(--color-prime-gradient) !important ;
+  background: var(--color-prime-gradient) !important;
 }
 
 .text-prime-gradient {
@@ -46,6 +47,7 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .link-hover:hover a {
   background: var(--color-prime-gradient);
   -webkit-background-clip: text;
@@ -64,6 +66,7 @@ html {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .btn-blur-opacity-1::after {
   content: "";
   position: absolute;
@@ -80,9 +83,44 @@ html {
 .btn-blur:hover::after {
   opacity: 1;
 }
+
 .btn-blur-opacity-1:hover::after {
   opacity: 0;
 }
-.swiper-initialized{
-  background:none !important;
+
+.swiper-initialized {
+  background: none !important;
+}
+
+@keyframes cheesePulse {
+
+  0%,
+  100% {
+    transform: scale(1) skewY(0deg);
+  }
+
+  50% {
+    transform: scale(1.05) skewY(1.5deg);
+  }
+}
+
+.pizza-cheese {
+  animation: cheesePulse 1.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes tomatoPop {
+
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.08) rotate(2deg);
+  }
+}
+
+.tomato-pop {
+  animation: tomatoPop 1.8s ease-in-out infinite;
 }

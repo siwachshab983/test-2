@@ -97,7 +97,7 @@ const OurGallery = () => {
           </div>
         </div>
         <Button className={'mt-8 !leading-[22px] sm:max-w-none max-w-[300px] max-sm:w-full'}>View More</Button>
-        <img className="absolute md:flex hidden right-0 -top-15" src={pizzaSlice} alt="" />
+        <img className="absolute md:flex hidden origin-right pizza-cheese right-0 -top-15" src={pizzaSlice} alt="image" />
       </Container>
     </div>
   )
