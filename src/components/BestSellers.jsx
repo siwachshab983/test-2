@@ -21,7 +21,7 @@ const BestSellers = () => {
             </div>
           </div>
           <Heading className="text-center pt-2 text-custom-3xl md:text-5xl sm:text-4xl  !leading-[120%]" >Pizzas You Can’t Say No To</Heading>
-          <Description className="text-[#373737] text-center pt-4">Tried, tested, and totally loved. These pizzas are always a crowd favorite.</Description>
+          <Description className="text-dark-mud-gray text-center pt-4">Tried, tested, and totally loved. These pizzas are always a crowd favorite.</Description>
           <div className="pt-[125px] flex-wrap justify-center flex gap-x-6 gap-y-20">
             {BESTSELLER_DATA.map((item, index) => (
               <div data-aos="fade-up" className="max-w-[267px] relative bg-off-white border border-[#0000000F] rounded-bl-xl rounded-tr-xl p-6 " key={index}>

@@ -27,7 +27,7 @@ const HowItWorks = () => {
             <div data-aos="fade-up" className="max-w-[470px] min-[776px]:max-w-[358px] lg:max-w-[364px] w-full p-4 lg:p-6" key={index}>
               <div className="bg-[#FCECE2] size-[70px] rounded-full flex items-center justify-center mx-auto">{<item.icon />}</div>
               <h3 className='leading-[150%] text-2xl font-semibold text-center mt-3'>{item.title}</h3>
-              <Description className="text-center !text-[#373737] pt-2 !leading-[26px]">{item.description}</Description>
+              <Description className="text-center !text-dark-mud-gray pt-2 !leading-[26px]">{item.description}</Description>
               <div className="flex justify-center">
                 <Button className="!py-2.5 !mt-3 !px-4 sm:max-w-none max-w-[300px] max-sm:w-full" >View Menu </Button>
               </div>

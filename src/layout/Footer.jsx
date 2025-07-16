@@ -53,7 +53,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="h-[3px] w-full mt-6 sm:mt-8 bg-fad-gray"></div>
+          <div className="h-[3px] w-full mt-6 sm:mt-8 bg-fad-gray opacity-40"></div>
           <Description className="text-mid-gray max-sm:text-sm py-4 text-center" >Copyright Pizza Nest © 2025, All rights reserved </Description>
         </div>
       </div >

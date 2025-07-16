@@ -124,31 +124,31 @@ export const SUPPORT_LINKS = [
 
 export const MENU_DATA = [
     {
-        title1: "Farmhouse Magic1",
-        title2: "Farmhouse Magic2",
-        title3: "Farmhouse Magic3",
-        title4: "Farmhouse Magic4",
-        title5: "Farmhouse Magic5",
+        title1: "Farmhouse Magic 1",
+        title2: "Farmhouse Magic 2",
+        title3: "Farmhouse Magic 3",
+        title4: "Farmhouse Magic 4",
+        title5: "Farmhouse Magic 5",
         price: "₹229 / ₹359 / ₹499",
         desc: "Onion, capsicum, tomato, grilled mushroom, mozzarella cheese",
         image: ourMenuPizza1
     },
     {
-        title1: "Masala Paneer1",
-        title2: "Masala Paneer2",
-        title3: "Masala Paneer3",
-        title4: "Masala Paneer4",
-        title5: "Masala Paneer5",
+        title1: "Masala Paneer 1",
+        title2: "Masala Paneer 2",
+        title3: "Masala Paneer 3",
+        title4: "Masala Paneer 4",
+        title5: "Masala Paneer 5",
         price: "₹279 / ₹399 / ₹519",
         desc: "Masala-marinated paneer, sautéed onions, capsicum, mozzarella cheese",
         image: ourMenuPizza2
     },
     {
-        title1: "Solo Meal Combo1",
-        title2: "Solo Meal Combo2",
-        title3: "Solo Meal Combo3",
-        title4: "Solo Meal Combo4",
-        title5: "Solo Meal Combo5",
+        title1: "Solo Meal Combo 1",
+        title2: "Solo Meal Combo 2",
+        title3: "Solo Meal Combo 3",
+        title4: "Solo Meal Combo 4",
+        title5: "Solo Meal Combo 5",
         price: "₹379",
         desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
         image: ourMenuPizza3
