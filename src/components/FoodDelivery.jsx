@@ -6,11 +6,12 @@ import { FOODDELIVERY } from '../utils/helper'
 import Button from './common/Button'
 import Container from './common/Container'
 import { Line } from '../utils/icon'
+import tomatoImg from '../assets/images/png/tomato-img.png'
 
 
 const FoodDelivery = () => {
   return (
-    <div className="px-5 py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
+    <div className="px-5 py-25 relative bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
       <Container>
         <div className='flex lg:flex-row flex-col-reverse gap-[33px]'>
           <div className='w-full py-2.5'>
@@ -34,9 +35,10 @@ const FoodDelivery = () => {
             </div>
             <Button className={'mt-6'}>Order Now</Button>
           </div>
-          <img src={image} alt="image" className='max-w-[612px] w-full block mx-auto' />
+          <img src={image} alt="image" className='max-w-[612px] w-full block mx-auto pointer-events-none' />
         </div>
       </Container>
+      <img className='pointer-events-none absolute -left-[235px] sm:flex hidden md:w-[409px] w-[350px] -bottom-[126px] opacity-60' src={tomatoImg} alt="tomatoImg" />
     </div>
   )
 }

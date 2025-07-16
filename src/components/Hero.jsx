@@ -16,18 +16,18 @@ const Hero = () => {
           <Description className={'text-on-white mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
             your perfect slice, or choose from our signature favorites</Description>
           <div className="flex flex-col sm:flex-row gap-6 mb-6">
-            <Button>Order Now</Button>
-            <Button className={'!bg-none btn-blur-opacity-1 border border-white'}>View Full Menu</Button>
+            <Button className={'!py-[15px]'}>Order Now</Button>
+            <Button className={'!bg-none btn-blur-opacity-1 !py-[15px] border border-white'}>View Full Menu</Button>
           </div>
           <div className="flex flex-col gap-y-2 sm:flex-row items-center">
             <div className="max-w-[155px] w-full">
               <h4 className='font-nunito mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]' >5,000+</h4>
-              <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[120%] w-full'> Pizzas Delivered</p>
+              <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[26px] w-full'> Pizzas Delivered</p>
             </div>
             <div className="border border-[#D5D5D5] sm:h-[39px] max-sm:w-full"></div>
             <div className="max-w-[155px] w-full">
               <h4 className='font-nunito mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]'>98%</h4>
-              <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[120%] w-full'> Happy Customers</p>
+              <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[26px] w-full'> Happy Customers</p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
         <div className="absolute xl:top-[138px] max-w-max lg:top-[180px] bottom-10 xl:left-[963px] lg:left-[800px] sm:right-10 max-sm:left-1/2 transform max-sm:-translate-x-1/2">
           <div className="size-[114px] relative p-3">
-            <img className='absolute top-0 animate-spin [animation-duration:5s] left-0 w-full h-full z-10' src={starImg} alt="star" />
+            <img className='pointer-events-none absolute top-0 animate-spin [animation-duration:5s] left-0 w-full h-full z-10' src={starImg} alt="star" />
             <div className="rounded-full flex justify-center border-3 border-white/80 items-center w-full h-full relative z-20">
               <span className='leading-[120%] text-[25px] font-semibold font-nunito text-white'>₹ 299</span>
             </div>

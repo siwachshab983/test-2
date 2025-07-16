@@ -24,15 +24,15 @@ const BestSellers = () => {
           <Description className="text-[#373737] text-center pt-4">Tried, tested, and totally loved. These pizzas are always a crowd favorite.</Description>
           <div className="pt-[125px] flex-wrap justify-center flex gap-x-6 gap-y-20">
             {BESTSELLER_DATA.map((item, index) => (
-              <div className="max-w-[267px] relative bg-[#FEFEFE] border border-[#0000000F] rounded-bl-xl rounded-tr-xl p-6 " key={index}>
-                <img className='absolute transform -top-[21%] -translate-x-1/2 left-1/2' src={item.img} alt="pizza-img" />
+              <div className="max-w-[267px] relative bg-off-white border border-[#0000000F] rounded-bl-xl rounded-tr-xl p-6 " key={index}>
+                <img className='pointer-events-none absolute transform -top-[21%] -translate-x-1/2 left-1/2' src={item.img} alt="pizza-img" />
                 <div className="flex justify-center pt-[61px]">
                   <h3 className='text-prime-gradient font-semibold text-[32px] leading-[140%]'>{item.price}</h3>
                 </div>
-                <p className="font-semibold text-[#010101] text-[28px] pt-[2px] text-center leading-[140%] whitespace-nowrap">{item.title}</p>
-                <p className='leading-[26px] text-[#5C5C5C] text-center pt-[2px]'>{item.description}</p>
+                <p className="font-semibold text-black text-[28px] pt-[2px] text-center leading-[140%] whitespace-nowrap">{item.title}</p>
+                <p className='leading-[26px] text-unmuted-gray text-center pt-[2px]'>{item.description}</p>
                 <div className="flex justify-center mt-3">
-                  <Button className="px-[16.5px] py-[9px]" >Order Now</Button>
+                  <Button className="px-[16.5px] !py-2.5" >Order Now</Button>
                 </div>
               </div>
             ))}

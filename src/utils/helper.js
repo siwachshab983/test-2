@@ -191,3 +191,21 @@ export const HOW_IT_WORKS_DATA = [
         description: "Watch your pizza arrive in real-time, fresh and hot at your door. Unbox happiness and dig in!",
     }
 ]
+
+export const TESTIMONIAL_DATA = [
+    {
+        text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
+        name: "Aarav Mehta",
+        role: "Software Developer",
+    },
+    {
+        text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
+        name: "Aarav Mehta",
+        role: "Software Developer",
+    },
+    {
+        text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
+        name: "Aarav Mehta",
+        role: "Software Developer",
+    },
+];

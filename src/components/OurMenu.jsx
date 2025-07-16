@@ -56,7 +56,7 @@ const OurMenu = () => {
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {MENU_DATA.map((item, i) => (
             <div className="" key={i}>
-              <img className="object-cover w-full" src={item.image} alt="pizza" />
+              <img className="object-cover pointer-events-none w-full" src={item.image} alt="pizza" />
               <div className="max-w-[324px] p-5 mx-auto w-full bg-white border border-black/10 rounded-[8px] -translate-y-[29px] flex flex-col justify-center items-center">
                 <p className="text-prime-gradient text-2xl font-semibold leading-[34px] text-center">{item.price}</p>
                 <h4 className="text-2xl font-semibold text-center leading-[34px] text-black my-0.5">
@@ -71,7 +71,7 @@ const OurMenu = () => {
         </div>
         <Button className={'mt-[3px] !leading-[22px]'}>View More</Button>
       </Container>
-      <img className="absolute left-0 top-[30px]" src={pizzaSlice} alt="" />
+      <img className="absolute pointer-events-none left-0 top-[30px]" src={pizzaSlice} alt="" />
     </div>
   );
 };

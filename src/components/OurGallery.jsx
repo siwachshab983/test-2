@@ -4,10 +4,11 @@ import Heading from './common/Heading'
 import { Line } from '../utils/icon'
 import { GALLERY_DATA } from '../utils/helper.js'
 import Button from './common/Button.jsx'
+import pizzaSlice from '../assets/images/png/pizza-slice-3.png'
 
 const OurGallery = () => {
   return (
-    <div className='px-5 py-25'>
+    <div className='px-5 py-25 relative'>
       <Container className={'flex justify-center items-center flex-col'}>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
@@ -23,20 +24,20 @@ const OurGallery = () => {
           <div className="xl:flex hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
             {
               GALLERY_DATA.slice(0, 2).map((image, i) => (
-                <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
               ))
             }
           </div>
           <div className="flex items-center md:gap-6 gap-4 w-full flex-col max-w-[558px]">
             {
               GALLERY_DATA.slice(2, 3).map((image, i) => (
-                <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
               ))
             }
             <div className="xl:flex hidden justify-center items-center md:gap-6 gap-4">
               {
                 GALLERY_DATA.slice(3, 5).map((image, i) => (
-                  <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                  <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
                 ))
               }
             </div>
@@ -44,21 +45,21 @@ const OurGallery = () => {
           <div className="xl:flex hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
             {
               GALLERY_DATA.slice(5, 8).map((image, i) => (
-                <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
               ))
             }
           </div>
           <div className="max-sm:hidden flex xl:hidden justify-center items-center w-full md:gap-6 gap-4">
             {
               GALLERY_DATA.slice(3, 5).map((image, i) => (
-                <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
               ))
             }
           </div>
           <div className="flex sm:hidden justify-center items-center w-full md:gap-6 gap-4">
             {
               GALLERY_DATA.slice(3, 4).map((image, i) => (
-                <img className='object-cover w-full rounded-xl' key={i} src={image} alt="image" />
+                <img className='pointer-events-none object-cover w-full rounded-xl' key={i} src={image} alt="image" />
               ))
             }
           </div>
@@ -66,20 +67,21 @@ const OurGallery = () => {
             <div className="flex xl:hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
               {
                 GALLERY_DATA.slice(0, 2).map((image, i) => (
-                  <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                  <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
                 ))
               }
             </div>
             <div className="flex xl:hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
               {
                 GALLERY_DATA.slice(5, 8).map((image, i) => (
-                  <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
+                  <img className='pointer-events-none object-cover rounded-xl' key={i} src={image} alt="image" />
                 ))
               }
             </div>
           </div>
         </div>
         <Button className={'mt-8 !leading-[22px]'}>View More</Button>
+        <img className="absolute right-0 -top-15" src={pizzaSlice} alt="" />
       </Container>
     </div>
   )

@@ -7,27 +7,9 @@ import Container from "./common/Container";
 import Heading from "./common/Heading";
 import { LeftArrow, Line, RightArrow } from "../utils/icon";
 import pizzaImg from "../assets/images/png/testimonial-pizza-img.png";
-import { TESTIMONIAL_AVATAR } from "../utils/helper";
+import { TESTIMONIAL_AVATAR, TESTIMONIAL_DATA } from "../utils/helper";
 import Button from "./common/Button";
 import Description from "./common/Description";
-
-const testimonials = [
-  {
-    text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
-    name: "Aarav Mehta",
-    role: "Software Developer",
-  },
-  {
-    text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
-    name: "Aarav Mehta",
-    role: "Software Developer",
-  },
-  {
-    text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
-    name: "Aarav Mehta",
-    role: "Software Developer",
-  },
-];
 
 const Testimonial = () => {
   const [activeAvatar, setActiveAvatar] = useState(1);
@@ -47,12 +29,11 @@ const Testimonial = () => {
         <Heading className={'font-semibold text-[48px] text-center mx-auto max-w-[569px] !leading-[120%]  mt-2 mb-15'}>What Our Customers Say</Heading>
 
         <div className="flex flex-col md:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
-          {/* Left: Image & Avatars (Static) */}
           <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10 ">
             <img
               src={pizzaImg}
               alt="Pizza"
-              className="w-full sm:flex hidden rounded-xl object-cover "
+              className="w-full sm:flex hidden rounded-xl pointer-events-none object-cover "
             />
             <div className="sm:absolute left-[-36px] top-[145px] flex sm:flex-col max-sm:w-full justify-center  items-center size-[74px] gap-3">
               {TESTIMONIAL_AVATAR.map((avatar, i) => (
@@ -77,7 +58,7 @@ const Testimonial = () => {
           }}
           className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full"
         >
-          {testimonials.map((item, index) => (
+          {TESTIMONIAL_DATA.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white rounded-xl shadow-lg p-6 w-full relative">
                 <Description className="text-gray-700 mb-4 !leading-[26px]">{item.text}</Description>
