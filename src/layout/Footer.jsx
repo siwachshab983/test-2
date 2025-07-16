@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex max-md:flex-col justify-between gap-10 md:gap-20">
             <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">
               <Heading className={'text-prime-gradient font-medium text-[42px] !leading-[63px] sm:text-start text-center'}>
-                Pizza Nest
+                <a href="#">Pizza Nest</a>
               </Heading>
               <Description className="text-mid-gray pt-3 sm:text-start text-center">At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference.</Description>
               <div className="flex items-center gap-5 mt-4 sm:mt-6 sm:justify-start justify-center">
@@ -29,18 +29,18 @@ const Footer = () => {
                 {QUICK_LINKS.map((link, i) => {
                   const path =
                     link.toLowerCase() === "home"
-                      ? "/"
-                      : "/" + link.toLowerCase().replace(/\s+/g, "-");
+                      ? "#"
+                      : "#" + link.toLowerCase().replace(/\s+/g, "-");
                   return (<li key={i} className="relative group mt-2 link-hover">
-                    <NavLink
-                      to={path}
+                    <a
+                      href={path}
                       className={`relative text-base text-mid-gray after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
               after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
               after:w-0 after:transition-all after:duration-300 group-hover:after:w-full`
                       }
                     >
                       {link}
-                    </NavLink>
+                    </a>
                   </li>)
                 })}
               </ul>

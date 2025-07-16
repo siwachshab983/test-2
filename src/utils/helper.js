@@ -20,11 +20,26 @@ import userAvatar3 from "../assets/images/png/testimonial-user-img-3.png";
 import { Check, ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, Order, Pizza, QualitySvg, SupportSvg, Track } from "./icon";
 
 export const NAVLINKS = [
-    "Home",
-    "Menu",
-    "Customize Pizza",
-    "Offers",
-    "About Us",
+    {
+        link: "Home",
+        id:"#home"
+    },
+    {
+        link: "Menu",
+        id:"#menu"
+    },
+    {
+        link: "Customize Pizza",
+        id:"#customize-pizza"
+    },
+    {
+        link: "Offers",
+        id:"#offers"
+    },
+    {
+        link: "About Us",
+        id:"#about-us"
+    }
 ];
 
 export const ABOUT_US_CARDS_DATA = [
@@ -202,12 +217,12 @@ export const TESTIMONIAL_DATA = [
     },
     {
         text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
-        name: "Aarav Mehta",
+        name: "Aarav Kumar",
         role: "Software Developer",
     },
     {
         text: "The Masala Paneer Pizza was bursting with flavor! The paneer was perfectly marinated in Indian spices, and the balance of onions, capsicum, and cheese was spot on. It tasted like my favorite desi snack—just in pizza form! Super satisfying and definitely ordering again.",
-        name: "Aarav Mehta",
+        name: "Sejal Singh",
         role: "Software Developer",
     },
 ];

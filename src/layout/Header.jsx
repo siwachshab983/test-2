@@ -14,41 +14,35 @@ const Header = () => {
   )
   useEffect(() => {
     if (isOpen) {
-      document.querySelector('html').classList.add('overflow-hidden');
+      document.querySelector('html').classList.add('max-lg:overflow-hidden');
     } else {
-      document.querySelector('html').classList.remove('overflow-hidden');
+      document.querySelector('html').classList.remove('max-lg:overflow-hidden');
     }
     return () => {
-      document.querySelector('html').classList.remove('overflow-hidden');
+      document.querySelector('html').classList.remove('max-lg:overflow-hidden');
     };
   }, [isOpen]);
   return (
     <div className='px-5 pt-6 pb-5.5 overflow-clip'>
       <Container className={'flex justify-between items-center !overflow-x-clip'}>
         <Heading className={'text-prime-gradient font-nunitosans font-medium text-[34px]'}>
-          Pizza Nest
+          <a href="#">Pizza Nest</a>
         </Heading>
         <ul className={`flex justify-center items-center gap-6 max-lg:min-h-screen max-lg:w-full max-lg:fixed top-0 duration-300 max-lg:flex-col z-50 bg-white ${isOpen ? 'right-0' : '-right-full'}`}>
           {NAVLINKS.map((link, index) => {
-            const path =
-              link.toLowerCase() === "home"
-                ? "/"
-                : "/" + link.toLowerCase().replace(/\s+/g, "-");
-
             return (
-              <li key={index} onClick={isOpen} className="relative link-hover group">
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    `relative  !leading-[26px] text-base group-hover:!text-prime-gradient
-              ${isActive ? "text-prime-gradient after:w-full" : "text-muted-gray"}
+              <li key={index} onClick={()=>toggleNavBar(false)} className="relative link-hover group">
+                <a
+                  href={link.id}
+                  className={
+                    `relative text-muted-gray  !leading-[26px] text-base group-hover:!text-prime-gradient
               after:content-[''] after:absolute after:left-0 after:bottom-[3px] after:h-[1px] after:rounded-full
               after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
               after:w-0 after:transition-all after:duration-300 group-hover:after:w-full `
                   }
                 >
-                  {link}
-                </NavLink>
+                  {link.link}
+                </a>
               </li>
             );
           })}

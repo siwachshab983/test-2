@@ -8,7 +8,7 @@ import pizzaSlice from '../assets/images/png/pizza-slice-3.png'
 
 const OurGallery = () => {
   return (
-    <div className='px-5 py-[50px] md:py-25 relative'>
+    <div id='gallery' className='px-5 py-[50px] md:py-25 relative'>
       <Container className={'flex justify-center items-center flex-col'}>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
@@ -96,7 +96,7 @@ const OurGallery = () => {
             </div>
           </div>
         </div>
-        <Button className={'mt-8 !leading-[22px] sm:max-w-none max-w-[400px] max-sm:w-full'}>View More</Button>
+        <Button className={'mt-8 !leading-[22px] sm:max-w-none max-w-[300px] max-sm:w-full'}>View More</Button>
         <img className="absolute md:flex hidden right-0 -top-15" src={pizzaSlice} alt="" />
       </Container>
     </div>

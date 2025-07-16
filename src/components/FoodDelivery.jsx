@@ -42,7 +42,7 @@ const FoodDelivery = () => {
                 </div>
               ))}
             </div>
-            <Button className={'mt-6 sm:max-w-none max-w-[400px] max-sm:w-full'}>Order Now</Button>
+            <Button className={'mt-6 sm:max-w-none max-w-[300px] max-sm:w-full'}>Order Now</Button>
           </div>
           <img src={image} alt="image" className='max-w-[612px] w-full block mx-auto pointer-events-none' />
         </div>

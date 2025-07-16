@@ -15,7 +15,7 @@ const Testimonial = () => {
   const [activeAvatar, setActiveAvatar] = useState(1);
 
   return (
-    <div className="relative px-5 py-[50px] md:py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
+    <div id="testimonial" className="relative px-5 py-[50px] md:py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
       <Container className={'relative'}>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
@@ -57,6 +57,7 @@ const Testimonial = () => {
               nextEl: ".nextBtn",
               prevEl: ".prevBtn",
             }}
+          
             className="shadow-[0px_4px_15.4px_0px_#0000000F] bg-white rounded-xl  lg:max-w-[680px] max-[455px]:min-h-[360px] min-h-[310px] sm:min-h-[298px]">
             {TESTIMONIAL_DATA.map((item, index) => (
               <SwiperSlide className="p-4 md:p-6" key={index}>

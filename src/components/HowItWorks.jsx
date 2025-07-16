@@ -29,7 +29,7 @@ const HowItWorks = () => {
               <h3 className='leading-[150%] text-2xl font-semibold text-center mt-3'>{item.title}</h3>
               <Description className="text-center !text-[#373737] pt-2 !leading-[26px]">{item.description}</Description>
               <div className="flex justify-center">
-                <Button className="!py-2.5 !mt-3 !px-4 sm:max-w-none max-w-[400px] max-sm:w-full" >View Menu </Button>
+                <Button className="!py-2.5 !mt-3 !px-4 sm:max-w-none max-w-[300px] max-sm:w-full" >View Menu </Button>
               </div>
             </div>
           ))}
