@@ -24,7 +24,7 @@ const BestSellers = () => {
           <Description className="text-[#373737] text-center pt-4">Tried, tested, and totally loved. These pizzas are always a crowd favorite.</Description>
           <div className="pt-[125px] flex-wrap justify-center flex gap-x-6 gap-y-20">
             {BESTSELLER_DATA.map((item, index) => (
-              <div className="max-w-[267px] relative bg-off-white border border-[#0000000F] rounded-bl-xl rounded-tr-xl p-6 " key={index}>
+              <div data-aos="fade-up" className="max-w-[267px] relative bg-off-white border border-[#0000000F] rounded-bl-xl rounded-tr-xl p-6 " key={index}>
                 <img className='pointer-events-none absolute transform -top-[21%] -translate-x-1/2 left-1/2' src={item.img} alt="pizza-img" />
                 <div className="flex justify-center pt-[61px]">
                   <h3 className='text-prime-gradient font-semibold text-[32px] leading-[140%]'>{item.price}</h3>

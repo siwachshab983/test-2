@@ -24,7 +24,7 @@ const HowItWorks = () => {
           <div className="absolute max-[776px]:rotate-90 top-[34%] min-[1180px]:left-[279px] min-[776px]:top-[100px]"><ArrowIcon /></div>
           <div className="absolute max-[776px]:rotate-90 max-[776px]:block max-[1180px]:hidden top-[50%] min-[776px]:right-[279px] max-[776px]:top-[68%] min-[1180px]:top-[100px]"><ArrowIcon /></div>
           {HOW_IT_WORKS_DATA.map((item, index) => (
-            <div className="max-w-[358px] lg:max-w-[364px] w-full p-4 lg:p-6" key={index}>
+            <div data-aos="fade-up" className="max-w-[358px] lg:max-w-[364px] w-full p-4 lg:p-6" key={index}>
               <div className="bg-[#FCECE2] size-[70px] rounded-full flex items-center justify-center mx-auto">{<item.icon />}</div>
               <h3 className='leading-[150%] text-2xl font-semibold text-center mt-3'>{item.title}</h3>
               <Description className="text-center !text-[#373737] pt-2 !leading-[26px]">{item.description}</Description>

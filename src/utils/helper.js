@@ -25,24 +25,22 @@ export const NAVLINKS = [
     "Customize Pizza",
     "Offers",
     "About Us",
-]
+];
+
 export const ABOUT_US_CARDS_DATA = [
     {
         img: ChefSvg,
-        aos: "fade-up-right",
         title: "Professional Chefs"
     },
     {
         img: QualitySvg,
-        aos: "fade-up",
         title: "Best Quality Food"
     },
     {
         img: SupportSvg,
-        aos: "fade-up-left",
         title: "Online Support"
     }
-]
+];
 
 export const LIMITEDOFFER_DATA = [
     {
@@ -50,16 +48,14 @@ export const LIMITEDOFFER_DATA = [
         text: "Only",
         price: "₹199",
         img: limitedOfferPizza1,
-        aos: "fade-up-right",
     },
     {
         title: "CHEESE BURST",
         text: "Only",
         price: "₹299",
         img: limitedOfferPizza2,
-        aos: "fade-up-left",
     }
-]
+];
 
 export const BESTSELLER_DATA = [
     {
@@ -86,7 +82,7 @@ export const BESTSELLER_DATA = [
         title: "Masala Paneer",
         description: "Masala-marinated paneer, sautéed onions, green & red capsicum, mozzarella cheese"
     },
-]
+];
 
 export const SOCIAL_ICON = [
     {
@@ -101,15 +97,16 @@ export const SOCIAL_ICON = [
         icon: LinkdinSvg,
         socialLink: "https://www.linkedin.com"
     }
-]
+];
 
 export const QUICK_LINKS = [
     "Home", "About Us", "Menu", "Gallery", "Testimonial", "Contact"
-]
+];
 
 export const SUPPORT_LINKS = [
     "Terms & Conditions", "Privacy Policy"
-]
+];
+
 export const MENU_DATA = [
     {
         title1: "Farmhouse Magic1",
@@ -151,7 +148,7 @@ export const GALLERY_DATA = [
     galleryImg5,
     galleryImg6,
     galleryImg7,
-]
+];
 
 export const FOODDELIVERY = [
     {
@@ -171,13 +168,13 @@ export const FOODDELIVERY = [
         info: 'Eco-Friendly Packaging',
     },
 
-]
+];
 
 export const TESTIMONIAL_AVATAR = [
     userAvatar1,
     userAvatar2,
     userAvatar3
-]
+];
 
 export const HOW_IT_WORKS_DATA = [
     {
@@ -195,7 +192,7 @@ export const HOW_IT_WORKS_DATA = [
         title: "Track & Enjoy",
         description: "Watch your pizza arrive in real-time, fresh and hot at your door. Unbox happiness and dig in!",
     }
-]
+];
 
 export const TESTIMONIAL_DATA = [
     {
