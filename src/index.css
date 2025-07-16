@@ -37,6 +37,11 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.link-hover:hover a {
+  background: var(--color-prime-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .btn-blur::after {
   content: "";

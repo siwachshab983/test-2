@@ -27,7 +27,7 @@ const BestSellers = () => {
               <div className="max-w-[267px] relative bg-[#FEFEFE] border border-[#0000000F] rounded-bl-xl rounded-tr-xl p-6" key={index}>
                 <img className='absolute transform -top-[21%] -translate-x-1/2 left-1/2' src={item.img} alt="pizza-img" />
                 <div className="flex justify-center pt-[61px]">
-                  <h3 className='gradient-text font-semibold text-[32px] leading-[140%]'>{item.price}</h3>
+                  <h3 className='text-prime-gradient font-semibold text-[32px] leading-[140%]'>{item.price}</h3>
                 </div>
                 <p className="font-semibold text-[#010101] text-[28px] pt-[2px] text-center leading-[140%] whitespace-nowrap">{item.title}</p>
                 <p className='leading-[160%] text-[#5C5C5C] text-center pt-[2px]'>{item.description}</p>

@@ -16,7 +16,7 @@ const BuyGetOffer = () => {
               <Button className="px-[32.5px] btn-gradient py-[15px] mt-3">Order Now</Button>
             </div>
             <div className="relative flex items-center">
-              <img className='max-w-[400px] pointer-events-none lg:max-w-[553px] w-full' src={tastyPizza} alt="pizza-img" />
+              <img className='max-w-[554px] pointer-events-none lg:max-w-[553px] w-full' src={tastyPizza} alt="pizza-img" />
             </div>
           </div>
         </div>

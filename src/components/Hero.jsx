@@ -8,7 +8,7 @@ import { ArrowLine } from '../utils/icon'
 const Hero = () => {
   return (
     <div className='max-w-[1440px] bg-off-white sm:px-10 px-5 w-full mx-auto'>
-      <div className="bg-[url(src/assets/images/png/hero.png)] relative bg-no-repeat bg-center bg-cover flex flex-col items-center w-full md:min-h-[710px] rounded-3xl pt-10 px-5 pb-[185px]">
+      <div className="bg-[url(./assets/images/png/hero.png)] relative bg-no-repeat bg-center bg-cover flex flex-col items-center w-full md:min-h-[710px] rounded-3xl pt-10 px-5 pb-[185px]">
         <div className="max-w-[593px] w-full md:absolute top-[131px] xl:left-[110px] left-[75px]">
           <Heading className="font-bold !leading-[120%] font-nunitosans text-[32px] sm:text-[40px] md:text-[48px] lg:text-[64px] text-white">
             Where Every Slice Feels Like Home
@@ -16,8 +16,8 @@ const Hero = () => {
           <Description className={'text-off-white mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
             your perfect slice, or choose from our signature favorites</Description>
           <div className="flex flex-col sm:flex-row gap-6 mb-6">
-            <Button className={'hover:!bg-none'}>Order Now</Button>
-            <Button className={'!bg-none btn-blur-opacity-1 border-white'}>View Full Menu</Button>
+            <Button>Order Now</Button>
+            <Button className={'!bg-none btn-blur-opacity-1 border border-white'}>View Full Menu</Button>
           </div>
           <div className="flex flex-col gap-y-2 sm:flex-row items-center">
             <div className="max-w-[155px] w-full">

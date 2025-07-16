@@ -3,6 +3,7 @@ import Container from './common/Container'
 import Heading from './common/Heading'
 import { Line } from '../utils/icon'
 import { GALLERY_DATA } from '../utils/helper.js'
+import Button from './common/Button.jsx'
 
 const OurGallery = () => {
   return (
@@ -32,10 +33,10 @@ const OurGallery = () => {
                 <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
               ))
             }
-            <div className="xl:flex hidden justify-center items-center w-full md:gap-6 gap-4">
+            <div className="xl:flex hidden justify-center items-center md:gap-6 gap-4">
               {
                 GALLERY_DATA.slice(3, 5).map((image, i) => (
-                  <img className='object-cover rounded-xl w-full h-auto' key={i} src={image} alt="image" />
+                  <img className='object-cover rounded-xl' key={i} src={image} alt="image" />
                 ))
               }
             </div>
@@ -61,7 +62,7 @@ const OurGallery = () => {
               ))
             }
           </div>
-          <div className="flex md:gap-6 gap-4 justify-center items-center">
+          <div className="flex xl:hidden md:gap-6 gap-4 justify-center items-center">
             <div className="flex xl:hidden items-center md:gap-6 gap-4 flex-col w-full max-w-[267px]">
               {
                 GALLERY_DATA.slice(0, 2).map((image, i) => (
@@ -78,6 +79,7 @@ const OurGallery = () => {
             </div>
           </div>
         </div>
+        <Button className={'mt-8 !leading-[22px]'}>View More</Button>
       </Container>
     </div>
   )
