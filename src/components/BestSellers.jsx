@@ -9,7 +9,7 @@ import Container from './common/Container';
 const BestSellers = () => {
   return (
     <>
-      <div className="px-5 py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
+      <div className="px-5 py-[50px] md:py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
         <Container>
           <div className=" flex justify-center items-center gap-1.5">
             <div className="">

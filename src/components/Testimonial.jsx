@@ -15,7 +15,7 @@ const Testimonial = () => {
   const [activeAvatar, setActiveAvatar] = useState(1);
 
   return (
-    <div className="relative px-5 py-25 bg-[url(./assets/images/png/testimonial-bg-img.png)] bg-no-repeat bg-cover bg-center">
+    <div className="relative px-5 py-[50px] md:py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
       <Container className={'relative'}>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
@@ -49,7 +49,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="lg:absolute bottom-[-76px] right-0 max-lg:mt-4 bg-[url(./assets/images/png/testimonial-slider-bg-img.png)] bg-no-repeat bg-cover bg-center ">
+        <div className="lg:absolute bottom-0 right-0 max-lg:mt-4 bg-[url(./assets/images/png/testimonial-slider-bg-img.png)] bg-no-repeat bg-cover bg-center ">
           <Swiper
             modules={[Navigation]}
             loop={true}

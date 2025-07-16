@@ -8,7 +8,7 @@ import { HOW_IT_WORKS_DATA } from '../utils/helper'
 
 const HowItWorks = () => {
   return (
-    <div className="px-5 py-25">
+    <div className="px-5 py-[50px] md:py-25">
       <Container>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">

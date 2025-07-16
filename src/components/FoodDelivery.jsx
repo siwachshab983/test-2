@@ -11,7 +11,7 @@ import tomatoImg from '../assets/images/png/tomato-img.png'
 
 const FoodDelivery = () => {
   return (
-    <div className="px-5 py-25 relative bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
+    <div className="px-5 py-[50px] md:py-25 relative bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
       <Container>
         <div className='flex lg:flex-row flex-col-reverse gap-[33px]'>
           <div className='w-full py-2.5'>

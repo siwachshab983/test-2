@@ -9,7 +9,7 @@ import Container from './common/Container';
 const LimitedOffer = () => {
   return (
     <>
-      <div className="px-4 py-10 sm:py-17 md:py-25 relative">
+      <div className="px-4 py-[50px] md:py-25 relative">
         <Container>
           <div className="flex max-lg:flex-wrap gap-6 items-center">
             {LIMITEDOFFER_DATA.map((item, index) => (
