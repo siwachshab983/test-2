@@ -57,12 +57,12 @@ const Testimonial = () => {
               nextEl: ".nextBtn",
               prevEl: ".prevBtn",
             }}
-          
+
             className="shadow-[0px_4px_15.4px_0px_#0000000F] bg-white rounded-xl  lg:max-w-[680px] max-[455px]:min-h-[360px] min-h-[310px] sm:min-h-[298px]">
             {TESTIMONIAL_DATA.map((item, index) => (
               <SwiperSlide className="p-4 md:p-6" key={index}>
                 <div className="sm:text-start text-center" >
-                  <Description className="text-mud-gray">{item.text}</Description>
+                  <Description className="text-mud-gray max-[380px]:!text-sm">{item.text}</Description>
                   <h3 className='text-2xl leading-[140%] font-semibold pt-4'>{item.name}</h3>
                   <Description className="text-mud-gray pt-[2px]">{item.role}</Description>
                 </div>

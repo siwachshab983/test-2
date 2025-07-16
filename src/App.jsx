@@ -3,7 +3,7 @@ import './App.css'
 import AppRoutes from './routes/AppRoutes'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import BackToTop from './components/common/BackToTop.Jsx';
+import BackToTop from './components/common/BackToTop.jsx';
 
 function App() {
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
 
     <>
       <AppRoutes />
-      <BackToTop/>
+      <BackToTop></BackToTop>
     </>
   )
 }

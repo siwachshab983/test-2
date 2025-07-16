@@ -12,11 +12,11 @@ const BestSellers = () => {
       <div id='customize-pizza' className="px-5 py-[50px] md:py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
         <Container>
           <div className=" flex justify-center items-center gap-1.5">
-            <div className="">
+            <div>
               <Line />
             </div>
             <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Best Sellers</h4>
-            <div className=" rotate-[180deg]">
+            <div className=" rotate-[180deg] !opacity-100">
               <Line />
             </div>
           </div>

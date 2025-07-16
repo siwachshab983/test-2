@@ -44,7 +44,7 @@ const FoodDelivery = () => {
             </div>
             <Button className={'mt-6 sm:max-w-none max-w-[300px] max-sm:w-full'}>Order Now</Button>
           </div>
-          <img src={image} alt="image" className='max-w-[612px] w-full block mx-auto pointer-events-none' />
+          <img src={image} alt="image" className='lg:max-w-[612px] md:max-w-[500px] max-w-[400px] w-full block mx-auto pointer-events-none' />
         </div>
       </Container>
       <img className='pointer-events-none absolute xl:-left-[235px] -left-[200px] md:flex hidden xl:w-[409px] w-[350px] -bottom-[126px] opacity-60' src={tomatoImg} alt="tomatoImg" />
