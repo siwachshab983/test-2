@@ -15,8 +15,8 @@ const LimitedOffer = () => {
             {LIMITEDOFFER_DATA.map((item, index) => (
               <div data-aos="fade-up" className="max-w-[700px] mx-auto lg:max-w-[558px] relative w-full min-h-[319px] pl-4 sm:pl-8 py-4 sm:py-[63px] rounded-xl bg-[url(./assets/images/png/limited-offer-bg-img.png)] bg-cover bg-center bg-no-repeat" key={index}>
                 <div className="z-1 relative max-w-max">
-                  <h5 className='text-xl sm:text-[28px] leading-[160%] text-prime-gradient'>Delicious</h5>
-                  <h2 className='text-white text-[28px] sm:text-4xl font-semibold leading-[160%]'>{item.title}</h2>
+                  <h5 className='text-xl sm:text-custom-3xl leading-[160%] text-prime-gradient'>Delicious</h5>
+                  <h2 className='text-white text-custom-3xl sm:text-4xl font-semibold leading-[160%]'>{item.title}</h2>
                   <p className='sm:text-xl leading-[160%] text-[#E9E9E9]'>Limited Time</p>
                   <Button className="!py-2.5 !px-4 !leading-[22px] mt-2 sm:mt-4" >Order Now</Button>
                 </div>

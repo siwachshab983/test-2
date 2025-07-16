@@ -20,7 +20,7 @@ const Footer = () => {
                   <div className="group cursor-pointer" key={index}>
                     <a key={index} className='size-[52px] group-hover:-translate-y-1 duration-300 bg-prime rounded-full flex justify-center items-center' target='_blank' href={item.socialLink}>{<item.icon />}</a>
                   </div>
-                  ))}
+                ))}
               </div>
             </div>
             <div className="flex max-w-[312px] gap-2 w-full justify-between">
@@ -34,7 +34,7 @@ const Footer = () => {
                   return (<li key={i} className="relative group mt-2 link-hover">
                     <NavLink
                       to={path}
-                      className={ `relative text-base after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
+                      className={`relative text-base text-mid-gray after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
               after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
               after:w-0 after:transition-all after:duration-300 group-hover:after:w-full `
                       }

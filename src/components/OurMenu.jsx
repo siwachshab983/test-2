@@ -28,7 +28,7 @@ const OurMenu = () => {
     <div className="px-5 py-[50px] md:py-25 relative">
       <Container className={'flex justify-center items-center flex-col'}>
         <div className=" flex justify-center items-center gap-1.5">
-          <div className="">
+          <div>
             <Line />
           </div>
           <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Our Menu</h4>
@@ -36,7 +36,7 @@ const OurMenu = () => {
             <Line />
           </div>
         </div>
-        <Heading className="text-center mt-2 text-5xl !leading-[120%] mb-10 max-w-[550px] w-full" >Explore Flavours, Pick Your Cravings</Heading>
+        <Heading className="text-center mt-2 text-custom-3xl md:text-5xl sm:text-4xl  !leading-[120%] mb-10 max-w-[550px] w-full" >Explore Flavours, Pick Your Cravings</Heading>
         <div className="flex flex-wrap justify-center gap-6 mb-10 w-full">
           {categories.map((category, i) => (
             <Button

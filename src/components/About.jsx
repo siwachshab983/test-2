@@ -18,7 +18,7 @@ const AboutUs = () => {
                                 <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>About Us</h4>
                                 <SingleLineSvg />
                             </div>
-                            <Heading className="pt-2 text-5xl !leading-[120%]" >Welcome to the Nest</Heading>
+                            <Heading className="pt-2 text-custom-3xl md:text-5xl sm:text-4xl  !leading-[120%]" >Welcome to the Nest</Heading>
                             <ul className='list-disc lg:max-w-[558px] ml-6 pt-4'>
                                 <li><Description className="text-dark-gray"  >At PizzaNest, we believe that pizza is more than just food — it’s an emotion, a celebration, and comfort all rolled into one delicious slice. Founded with a passion for real ingredients and big flavors, we set out to bring handcrafted, oven-fresh pizzas to every corner of India.</Description></li>
                                 <li className='pt-3'><Description className="text-dark-gray" >Whether you're craving spicy paneer, a creamy cheese burst, or a fully loaded custom pizza made your way, we've got you covered. Each pizza is baked with love, topped with the freshest veggies, premium cheese, and authentic sauces — all delivered hot and fast, right to your doorstep.</Description></li>

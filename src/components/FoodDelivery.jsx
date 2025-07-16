@@ -21,7 +21,7 @@ const FoodDelivery = () => {
                 <Line />
               </div>
             </div>
-            <Heading className={'text-[48px] w-full !leading-[120%] lg:max-w-[463px] mt-2'}>
+            <Heading className={'text-custom-3xl md:text-5xl sm:text-4xl  w-full !leading-[120%] lg:max-w-[463px] mt-2'}>
               Fast, Fresh & Always On Time
             </Heading>
             <Description className={'text-[#373737] mb-3 font-normal mt-[15px] !leading-[26px] w-full lg:max-w-[463px]'}>We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away.</Description>

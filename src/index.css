@@ -21,6 +21,7 @@ html {
   --color-mud-gray: #545454;
   --color-black: #010101;
   --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46% );
+  --text-custom-3xl: 28px;
 }
 
 * {

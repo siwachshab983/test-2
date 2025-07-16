@@ -26,7 +26,7 @@ const Testimonial = () => {
             <Line />
           </div>
         </div>
-        <Heading className={'font-semibold text-[48px] text-center mx-auto max-w-[569px] !leading-[120%]  mt-2 mb-15'}>What Our Customers Say</Heading>
+        <Heading className={'font-semibold text-custom-3xl md:text-5xl sm:text-4xl  text-center mx-auto max-w-[569px] !leading-[120%]  mt-2 mb-15'}>What Our Customers Say</Heading>
 
         <div className="flex flex-col md:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
           <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10 ">

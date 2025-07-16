@@ -19,7 +19,7 @@ const HowItWorks = () => {
             <Line />
           </div>
         </div>
-        <Heading className={'font-semibold text-[48px] text-center mx-auto max-w-[569px] !leading-[120%]  mt-2'}>Your Perfect Pizza in Just 3 Easy Steps!</Heading>
+        <Heading className={'font-semibold text-custom-3xl md:text-5xl sm:text-4xl  text-center mx-auto max-w-[569px] !leading-[120%]  mt-2'}>Your Perfect Pizza in Just 3 Easy Steps!</Heading>
         <div className="pt-10 relative flex flex-wrap justify-center items-center gap-20 min-[776px]:gap-5 lg:gap-6 ">
           <div className="absolute max-[776px]:rotate-90 top-[34%] min-[1180px]:left-[279px] min-[776px]:top-[100px]"><ArrowIcon /></div>
           <div className="absolute max-[776px]:rotate-90 max-[776px]:block max-[1180px]:hidden top-[50%] min-[776px]:right-[279px] max-[776px]:top-[68%] min-[1180px]:top-[100px]"><ArrowIcon /></div>
