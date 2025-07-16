@@ -3,8 +3,8 @@ export const ArrowLine = () => (
         <path opacity="0.8" d="M275.481 88.6736L276.557 77.1768L266.062 81.9933L275.481 88.6736ZM126.069 46.7796L125.077 46.6558L126.069 46.7796ZM155.938 68.5943L155.316 67.8111L155.938 68.5943ZM133.036 66.3561L133.742 65.6477L133.036 66.3561ZM144.32 25.8028L143.771 26.6387L144.32 25.8028ZM162.319 50.8248L161.326 50.9418L162.319 50.8248ZM0.703574 6.3354L0.908245 7.31423C16.1399 4.12932 40.6232 1.56552 66.9358 3.50664C93.2568 5.44836 121.313 11.8909 143.771 26.6387L144.32 25.8028L144.869 24.9669C122.018 9.96112 93.5842 3.46709 67.083 1.51206C40.5734 -0.443588 15.9026 2.13568 0.498903 5.35657L0.703574 6.3354ZM162.319 50.8248L161.326 50.9418C162.067 57.2288 160.76 63.4882 155.316 67.8111L155.938 68.5943L156.56 69.3774C162.735 64.4742 164.101 57.405 163.312 50.7078L162.319 50.8248ZM133.036 66.3561L133.742 65.6477C129.159 61.0816 126.065 54.8958 127.062 46.9034L126.069 46.7796L125.077 46.6558C123.989 55.3807 127.402 62.1543 132.33 67.0645L133.036 66.3561ZM200.502 17.9842L200.164 18.9255C225.288 27.9333 253.184 45.5117 270.833 80.9429L271.728 80.497L272.623 80.0512C254.687 44.044 226.313 26.1763 200.839 17.0429L200.502 17.9842ZM126.069 46.7796L127.062 46.9034C128.907 32.1111 139.863 22.5496 154.134 17.9497C168.417 13.3462 185.844 13.7912 200.164 18.9255L200.502 17.9842L200.839 17.0429C186.12 11.7655 168.24 11.302 153.521 16.0461C138.791 20.7937 127.051 30.8358 125.077 46.6558L126.069 46.7796ZM155.938 68.5943L155.316 67.8111C149.083 72.7608 139.525 71.4091 133.742 65.6477L133.036 66.3561L132.33 67.0645C138.683 73.394 149.378 75.0808 156.56 69.3774L155.938 68.5943ZM144.32 25.8028L143.771 26.6387C152.606 32.4409 160.124 40.7421 161.326 50.9418L162.319 50.8248L163.312 50.7078C162.01 39.6557 153.92 30.9108 144.869 24.9669L144.32 25.8028Z" fill="url(#paint0_linear_133_6060)" />
         <defs>
             <linearGradient id="paint0_linear_133_6060" x1="-1.57674" y1="58.662" x2="272.161" y2="1.36285" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#EC6112" />
-                <stop offset="1" stop-color="#FF902E" />
+                <stop stopColor="#EC6112" />
+                <stop offset="1" stopColor="#FF902E" />
             </linearGradient>
         </defs>
     </svg>
@@ -14,9 +14,9 @@ export const Line = () => (
         <path d="M60.5 1H0.491669" stroke="url(#paint0_linear_133_5438)" />
         <defs>
             <linearGradient id="paint0_linear_133_5438" x1="60.5" y1="1.76761" x2="56.4905" y2="-15.3725" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#EC6112" />
-                <stop offset="0.380908" stop-color="#FF902E" />
-                <stop offset="0.74047" stop-color="#FEFEFE" stop-opacity="0" />
+                <stop stopColor="#EC6112" />
+                <stop offset="0.380908" stopColor="#FF902E" />
+                <stop offset="0.74047" stopColor="#FEFEFE" stopOpacity="0" />
             </linearGradient>
         </defs>
     </svg>
@@ -103,8 +103,8 @@ export const SingleLineSvg = () => (
         <line x1="0.832031" y1="1.05023" x2="60.8404" y2="1.05023" stroke="url(#paint0_linear_256_306)" />
         <defs>
             <linearGradient id="paint0_linear_256_306" x1="0.832032" y1="2.31785" x2="4.10359" y2="-11.5765" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#EC6112" />
-                <stop offset="1" stop-color="#FF902E" />
+                <stop stopColor="#EC6112" />
+                <stop offset="1" stopColor="#FF902E" />
             </linearGradient>
         </defs>
     </svg>
@@ -193,12 +193,12 @@ export const Track = () => (
 )
 export const LeftArrow = () => (
     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path className="group-hover:stroke-[#333333]" d="M15 7L1 7M15 7L9 1M15 7L9 13" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path className="group-hover:stroke-[#333333]" d="M15 7L1 7M15 7L9 1M15 7L9 13" stroke="#FEFEFE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 )
 export const RightArrow = () => (
     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path className="group-hover:stroke-[#333333]" d="M1 7L15 7M1 7L7 1M1 7L7 13" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path className="group-hover:stroke-[#333333]" d="M1 7L15 7M1 7L7 1M1 7L7 13" stroke="#FEFEFE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 )
 export const ArrowIcon = () => (
