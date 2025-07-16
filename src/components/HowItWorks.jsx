@@ -1,10 +1,10 @@
 import React from 'react'
 import Description from './common/Description'
 import Heading from './common/Heading'
-import leftArrow from './../assets/images/png/left-arrow.png'
-import { Line, Order, Pizza, Track } from '../utils/icon'
+import { ArrowIcon, Line } from '../utils/icon'
 import Button from './common/Button'
 import Container from './common/Container'
+import { HOW_IT_WORKS_DATA } from '../utils/helper'
 
 const HowItWorks = () => {
   return (
@@ -19,46 +19,20 @@ const HowItWorks = () => {
             <Line />
           </div>
         </div>
-        <Heading className={'font-semibold text-[48px] text-center mx-auto max-w-[569px]  mt-2 mb-[40px]'}>Your Perfect Pizza in Just 3 Easy Steps!</Heading>
-
-        <div className='flex md:flex-row flex-col max-md:justify-center max-md:items-center md:gap-0 gap-6
-      '>
-          <div className='max-w-[364px] flex justify-between flex-col '>
-            <div className='w-[70px] mx-auto h-[70px] flex items-center justify-center rounded-[50%] bg-[#FDEDE3] mb-3'>
-              <Pizza />
-            </div>
-            <Description className={'font-semibold text-[20px] min-[910px]:text-[24px] mt-3 text-center '}>Choose Your Pizza</Description>
-            <Description className={'font-normal text-center max-w-[316px] mt-2 mb-3 '}>Browse our mouthwatering menu and pick your favorite from a wide range of cheesy, spicy, and desi-delicious pizzas.</Description>
-            <Button className={'!py-[10px] !px-[16px] mx-auto block'}>View Menu</Button>
-          </div>
-
-          <img src={leftArrow} alt="line" className='max-lg:mx-auto mt-[45px] h-[12px] w-[80px] max-md:mb-[45px] md:rotate-0 rotate-90 lg:w-[191px]  md:w-[140px]' />
-
-          <div className='max-w-[364px] flex justify-between flex-col'>
-            <div className=''>
-              <div className='w-[70px] mx-auto h-[70px] flex items-center justify-center rounded-[50%] bg-[#FDEDE3] mb-3'>
-                <Order />
+        <Heading className={'font-semibold text-[48px] text-center mx-auto max-w-[569px] !leading-[120%]  mt-2'}>Your Perfect Pizza in Just 3 Easy Steps!</Heading>
+        <div className="pt-10 relative flex flex-wrap justify-center items-center gap-20 min-[776px]:gap-5 lg:gap-6 ">
+          <div className="absolute max-[776px]:rotate-90 top-[34%] min-[1180px]:left-[279px] min-[776px]:top-[100px]"><ArrowIcon /></div>
+          <div className="absolute max-[776px]:rotate-90 max-[776px]:block max-[1180px]:hidden top-[50%] min-[776px]:right-[279px] max-[776px]:top-[68%] min-[1180px]:top-[100px]"><ArrowIcon /></div>
+          {HOW_IT_WORKS_DATA.map((item, index) => (
+            <div className="max-w-[358px] lg:max-w-[364px] w-full p-4 lg:p-6" key={index}>
+              <div className="bg-[#FCECE2] size-[70px] rounded-full flex items-center justify-center mx-auto">{<item.icon />}</div>
+              <h3 className='leading-[150%] text-2xl font-semibold text-center mt-3'>{item.title}</h3>
+              <Description className="text-center !text-[#373737] pt-2 !leading-[26px]">{item.description}</Description>
+              <div className="flex justify-center">
+                <Button className="!py-2.5 !mt-3 !px-4" >View Menu </Button>
               </div>
-              <Description className={'font-semibold text-[20px] min-[910px]:text-[24px] mt-3 text-center '}>Place Your Order</Description>
-              <Description className={'font-normal text-center max-w-[316px] mt-2 mb-3 '}>BConfirm your cart, choose delivery or pickup, and pay securely — all in under
-                a minute.</Description>
             </div>
-            <Button className={'!py-[10px] !px-[16px] mx-auto block'}>View Menu</Button>
-          </div>
-
-          <img src={leftArrow} alt="line" className='max-lg:mx-auto mt-[45px] md:rotate-0 rotate-90 w-[80px] max-md:mb-[45px] h-[12px] min-lg:w-[191px] md:w-[140px]' />
-
-          <div className='max-w-[364px] flex justify-between flex-col'>
-            <div>
-              <div className='w-[70px] mx-auto h-[70px] flex items-center justify-center rounded-[50%] bg-[#FDEDE3] mb-3'>
-                <Track />
-              </div>
-              <Description className={'font-semibold text-[20px] min-[910px]:text-[24px] mt-3 text-center '}>Track & Enjoy</Description>
-              <Description className={'font-normal text-center max-w-[316px] mt-2 mb-3 '}>Watch your pizza arrive in real-time, fresh and hot at your door. Unbox happiness
-                and dig in!</Description>
-            </div>
-            <Button className={'!py-[10px] !px-[16px] mx-auto'}>View Menu</Button>
-          </div>
+          ))}
         </div>
       </Container>
     </div>

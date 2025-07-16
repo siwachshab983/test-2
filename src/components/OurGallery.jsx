@@ -9,7 +9,7 @@ const OurGallery = () => {
   return (
     <div className='px-5 py-25'>
       <Container className={'flex justify-center items-center flex-col'}>
-        <div className=" flex justify-center items-center gap-1.5 mb-2">
+        <div className=" flex justify-center items-center gap-1.5">
           <div className="">
             <Line />
           </div>

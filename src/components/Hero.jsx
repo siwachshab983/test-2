@@ -13,7 +13,7 @@ const Hero = () => {
           <Heading className="font-bold !leading-[120%] font-nunitosans text-[32px] sm:text-[40px] md:text-[48px] lg:text-[64px] text-white">
             Where Every Slice Feels Like Home
           </Heading>
-          <Description className={'text-off-white mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
+          <Description className={'text-on-white mt-4 mb-8 max-w-[540px] w-full'}> At Pizza Nest, we bake more than pizza — we bake comfort. Customize
             your perfect slice, or choose from our signature favorites</Description>
           <div className="flex flex-col sm:flex-row gap-6 mb-6">
             <Button>Order Now</Button>

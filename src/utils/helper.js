@@ -17,7 +17,7 @@ import galleryImg7 from "../assets/images/png/gallery-img-7.png";
 import userAvatar1 from "../assets/images/png/testimonial-user-img-1.png";
 import userAvatar2 from "../assets/images/png/testimonial-user-img-2.png";
 import userAvatar3 from "../assets/images/png/testimonial-user-img-3.png";
-import { Check, ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, QualitySvg, SupportSvg } from "./icon";
+import { Check, ChefSvg, FacebookSvg, InstaSvg, LinkdinSvg, Order, Pizza, QualitySvg, SupportSvg, Track } from "./icon";
 
 export const NAVLINKS = [
     "Home",
@@ -172,4 +172,22 @@ export const TESTIMONIAL_AVATAR = [
     userAvatar1,
     userAvatar2,
     userAvatar3
+]
+
+export const HOW_IT_WORKS_DATA = [
+    {
+        icon: Pizza,
+        title: "Choose Your Pizza",
+        description: "Browse our mouthwatering menu and pick your favorite from a wide range of cheesy, spicy, and desi-delicious pizzas.",
+    },
+    {
+        icon: Order,
+        title: "Place Your Order",
+        description: "Confirm your cart, choose delivery or pickup, and pay securely — all in under a minute.",
+    },
+    {
+        icon: Track,
+        title: "Track & Enjoy",
+        description: "Watch your pizza arrive in real-time, fresh and hot at your door. Unbox happiness and dig in!",
+    }
 ]

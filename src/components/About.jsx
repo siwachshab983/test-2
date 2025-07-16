@@ -4,6 +4,7 @@ import Description from './common/Description';
 import chefImg from '../assets/images/png/chef-img.png'
 import { ABOUT_US_CARDS_DATA } from '../utils/helper';
 import pizzaSlice from '../assets/images/png/pizza-slice.png';
+import cardBgImg from '../assets/images/png/about-bg-img.png';
 import { SingleLineSvg } from '../utils/icon';
 const AboutUs = () => {
     return (
@@ -15,7 +16,7 @@ const AboutUs = () => {
                         <div className="lg:max-w-[558px]">
                             <div className="flex items-center gap-1.5">
                                 <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>About</h4>
-                                <SingleLineSvg/>
+                                <SingleLineSvg />
                             </div>
                             <Heading className="pt-2 text-5xl !leading-[120%]" >Welcome to the Nest</Heading>
                             <ul className='list-disc lg:max-w-[558px] ml-6 pt-4'>
@@ -25,15 +26,16 @@ const AboutUs = () => {
                             <div className="flex flex-wrap mt-6 gap-4 sm:gap-6 lg:max-h-[135px] max-lg:justify-center">
                                 {ABOUT_US_CARDS_DATA.map((item, index) => (
                                     <div className={`${index === 1 ? "sm:mt-3" : ""}`}>
-                                        <div key={index} className="bg-[#FEFEFE] border w-full min-w-[160px] sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 shadow-[0px_1px_7px_0px_#F67A211F] rounded-xl border-dashed">
-                                            <div className="bg-[#FCECE2] size-[52px] mx-auto rounded-full flex justify-center items-center">{<item.img />}</div>
-                                            <p className='leading-[160%] text-center whitespace-nowrap text-[#474747] pt-2'>{item.title}</p>
+                                        <div key={index} className="bg-[#FEFEFE] w-full min-w-[160px] sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 shadow-[0px_1px_7px_0px_#F67A211F] relative rounded-xl">
+                                            <div className="bg-[#FCECE2] relative z-10 size-[52px] mx-auto rounded-full flex justify-center items-center">{<item.img />}</div>
+                                            <p className='leading-[160%] relative z-10 text-center whitespace-nowrap text-[#474747] pt-2'>{item.title}</p>
+                                            <img className='absolute top-0 right-0 w-full h-full' src={cardBgImg} alt="cardBgImg" />
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <img className='lg:max-h-[597px] pointer-events-none max-w-[383px] w-full mt-4' src={chefImg} alt="man-img" />
+                        <img className='lg:max-h-[597px] pointer-events-none max-w-[383px] w-full mt-1' src={chefImg} alt="man-img" />
                     </div>
                 </div>
             </div>

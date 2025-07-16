@@ -4,6 +4,7 @@ import Button from "./common/Button.jsx";
 import Container from './common/Container.jsx'
 import { Line, RatingSvg } from "../utils/icon.jsx";
 import Heading from "./common/Heading.jsx";
+import pizzaSlice from "../assets/images/png/pizza-slice-2.png";
 
 const categories = ["All", "Veg Pizzas", "Non-Veg Pizzas", "Combos & Drinks", "Sides & Dips"];
 
@@ -24,13 +25,13 @@ const OurMenu = () => {
   const titleKey = getTitleKey(activeCategory);
 
   return (
-    <div className="px-5 py-25">
+    <div className="px-5 py-25 relative">
       <Container className={'flex justify-center items-center flex-col'}>
-        <div className=" flex justify-center items-center gap-1.5 mb-2">
+        <div className=" flex justify-center items-center gap-1.5">
           <div className="">
             <Line />
           </div>
-          <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Best Sellers</h4>
+          <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Our Menu</h4>
           <div className=" rotate-[180deg]">
             <Line />
           </div>
@@ -70,6 +71,7 @@ const OurMenu = () => {
         </div>
         <Button className={'mt-[3px] !leading-[22px]'}>View More</Button>
       </Container>
+      <img className="absolute left-0 top-[30px]" src={pizzaSlice} alt="" />
     </div>
   );
 };

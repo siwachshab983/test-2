@@ -3,12 +3,14 @@ import { LIMITEDOFFER_DATA } from '../utils/helper';
 import Button from './common/Button';
 import cloudImg from '../assets/images/png/cloud-image.png'
 import singleCloudImg from '../assets/images/png/single-cloud-image.png'
+import tomatoImg from '../assets/images/png/tomato-img.png'
+import Container from './common/Container';
 
 const LimitedOffer = () => {
   return (
     <>
-      <div className="px-4 py-10 sm:py-17 md:py-25">
-        <div className="max-w-[1140px] mx-auto">
+      <div className="px-4 py-10 sm:py-17 md:py-25 relative">
+        <Container>
           <div className="flex max-lg:flex-wrap gap-6 items-center">
             {LIMITEDOFFER_DATA.map((item, index) => (
               <div className="max-w-[700px] mx-auto lg:max-w-[558px] relative w-full min-h-[319px] pl-4 sm:pl-8 py-4 sm:py-[63px] rounded-xl bg-[url(./assets/images/png/limited-offer-bg-img.png)] bg-cover bg-center bg-no-repeat" key={index}>
@@ -30,7 +32,8 @@ const LimitedOffer = () => {
               </div>
             ))}
           </div>
-        </div>
+          <img className='absolute -right-[200px] sm:flex hidden md:w-[409px] w-[350px] -bottom-[159px] opacity-60' src={tomatoImg} alt="tomatoImg" />
+        </Container>
       </div>
     </>
   )
