@@ -10,6 +10,7 @@ html {
   --color-soft-gray: #E8E8E8;
   --color-off-white: #FEFEFE;
   --color-on-white: #EFEFEF;
+  --color-light-white: #EEEEEE;
   --color-mid-gray: #575757;
   --color-light-gray: #C1C1C1;
   --color-lighter-gray: #E1E1E1;
@@ -17,6 +18,7 @@ html {
   --color-fad-gray: #D1D1D1;
   --color-muted-gray: #787878;
   --color-unmuted-gray: #5C5C5C;
+  --color-mud-gray: #545454;
   --color-black: #010101;
   --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46% );
 }
@@ -73,4 +75,7 @@ html {
 }
 .btn-blur-opacity-1:hover::after {
   opacity: 0;
+}
+.swiper-initialized{
+  background:none !important;
 }

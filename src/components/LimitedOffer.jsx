@@ -13,7 +13,7 @@ const LimitedOffer = () => {
         <Container>
           <div className="flex max-lg:flex-wrap gap-6 items-center">
             {LIMITEDOFFER_DATA.map((item, index) => (
-              <div className="max-w-[700px] mx-auto lg:max-w-[558px] relative w-full min-h-[319px] pl-4 sm:pl-8 py-4 sm:py-[63px] rounded-xl bg-[url(./assets/images/png/limited-offer-bg-img.png)] bg-cover bg-center bg-no-repeat" key={index}>
+              <div data-aos={item.aos} className="max-w-[700px] mx-auto lg:max-w-[558px] relative w-full min-h-[319px] pl-4 sm:pl-8 py-4 sm:py-[63px] rounded-xl bg-[url(./assets/images/png/limited-offer-bg-img.png)] bg-cover bg-center bg-no-repeat" key={index}>
                 <div className="z-1 relative max-w-max">
                   <h5 className='text-xl sm:text-[28px] leading-[160%] text-prime-gradient'>Delicious</h5>
                   <h2 className='text-white text-[28px] sm:text-4xl font-semibold leading-[160%]'>{item.title}</h2>

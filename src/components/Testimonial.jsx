@@ -15,7 +15,7 @@ const Testimonial = () => {
   const [activeAvatar, setActiveAvatar] = useState(1);
 
   return (
-    <div className="relative px-5 py-25 bg-[url(./assets/images/png/best-seller-bg-img.png)] bg-no-repeat bg-cover bg-center">
+    <div className="relative px-5 py-25 bg-[url(./assets/images/png/testimonial-bg-img.png)] bg-no-repeat bg-cover bg-center">
       <Container className={'relative'}>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
@@ -49,33 +49,34 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <Swiper
-          modules={[Navigation]}
-          loop={true}
-          navigation={{
-            nextEl: ".nextBtn",
-            prevEl: ".prevBtn",
-          }}
-          className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full"
-        >
-          {TESTIMONIAL_DATA.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white rounded-xl shadow-lg p-6 w-full relative">
-                <Description className="text-gray-700 mb-4 !leading-[26px]">{item.text}</Description>
-                <h4 className="font-semibold text-2xl text-black mt-4 mb-0.5">{item.name}</h4>
-                <p className="text-base leading-[26px] mb-6">{item.role}</p>
-                <div className="flex items-center gap-1 ">
-                  <Button className="prevBtn hover:!bg-none group hover:!bg-[#EEEEEE] !rounded-[4px] border !px-[15px] !py-3.5 flex items-center justify-center transition">
-                    <RightArrow />
-                  </Button>
-                  <Button className="nextBtn hover:!bg-none group hover:!bg-[#EEEEEE] !rounded-[4px] text-white flex items-center justify-center !px-[15px] !py-3.5 transition">
-                    <LeftArrow />
-                  </Button>
+        <div className="lg:absolute bottom-[-76px] right-0 max-lg:mt-4 bg-[url(./assets/images/png/testimonial-slider-bg-img.png)] bg-no-repeat bg-cover bg-center ">
+          <Swiper
+            modules={[Navigation]}
+            loop={true}
+            navigation={{
+              nextEl: ".nextBtn",
+              prevEl: ".prevBtn",
+            }}
+            className="shadow-[0px_4px_15.4px_0px_#0000000F] bg-white rounded-xl  lg:max-w-[680px] max-[455px]:min-h-[360px] min-h-[310px] sm:min-h-[298px]">
+            {TESTIMONIAL_DATA.map((item, index) => (
+              <SwiperSlide className="p-4 md:p-6" key={index}>
+                <div >
+                  <Description className="text-mud-gray">{item.text}</Description>
+                  <h3 className='text-2xl leading-[140%] font-semibold pt-4'>{item.name}</h3>
+                  <Description className="text-mud-gray pt-[2px]">{item.role}</Description>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="flex items-center absolute z-10 bottom-6 left-6 mt-6 gap-1">
+            <Button className="prevBtn hover:!bg-none group hover:!bg-light-white hover:!scale-100 !rounded-[4px] border !px-[15px] !py-3.5 flex items-center justify-center transition">
+              <RightArrow />
+            </Button>
+            <Button className="nextBtn hover:!bg-none group hover:!bg-light-white hover:!scale-100 !rounded-[4px] text-white flex items-center justify-center !px-[15px] !py-3.5 transition">
+              <LeftArrow />
+            </Button>
+          </div>
+        </div>
       </Container>
     </div>
   );

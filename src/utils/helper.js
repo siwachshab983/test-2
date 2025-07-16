@@ -29,14 +29,17 @@ export const NAVLINKS = [
 export const ABOUT_US_CARDS_DATA = [
     {
         img: ChefSvg,
+        aos: "fade-up-right",
         title: "Professional Chefs"
     },
     {
         img: QualitySvg,
+        aos: "fade-up",
         title: "Best Quality Food"
     },
     {
         img: SupportSvg,
+        aos: "fade-up-left",
         title: "Online Support"
     }
 ]
@@ -47,12 +50,14 @@ export const LIMITEDOFFER_DATA = [
         text: "Only",
         price: "₹199",
         img: limitedOfferPizza1,
+        aos: "fade-up-right",
     },
     {
         title: "CHEESE BURST",
         text: "Only",
         price: "₹299",
         img: limitedOfferPizza2,
+        aos: "fade-up-left",
     }
 ]
 
