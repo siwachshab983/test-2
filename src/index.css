@@ -27,7 +27,6 @@ html {
   --color-dark-mud-gray: #373737;
   --color-black: #010101;
   --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
-  --color-prime-gradient-hover: linear-gradient(85.95deg, #FF902E 1.54%, #EC6112 98.46%);
   --text-custom-3xl: 28px;
 }
 
@@ -145,4 +144,19 @@ html {
 
 .tomato-pop {
   animation: tomatoPop 1.8s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  border-radius: 10px;
 }
