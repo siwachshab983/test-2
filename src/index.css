@@ -27,6 +27,7 @@ html {
   --color-dark-mud-gray: #373737;
   --color-black: #010101;
   --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  --color-prime-gradient-hover: linear-gradient(85.95deg, #FF902E 1.54%, #EC6112 98.46%);
   --text-custom-3xl: 28px;
 }
 
