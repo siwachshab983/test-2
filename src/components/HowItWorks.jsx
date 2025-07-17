@@ -1,7 +1,7 @@
 import React from 'react'
 import Description from './common/Description'
 import Heading from './common/Heading'
-import { ArrowIcon, Line, Line2 } from '../utils/icon'
+import { ArrowIcon, Line2 } from '../utils/icon'
 import Button from './common/Button'
 import Container from './common/Container'
 import { HOW_IT_WORKS_DATA } from '../utils/helper'

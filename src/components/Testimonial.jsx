@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Container from "./common/Container";
 import Heading from "./common/Heading";
-import { LeftArrow, Line, Line2, RightArrow } from "../utils/icon";
+import { LeftArrow, Line2, RightArrow } from "../utils/icon";
 import pizzaImg from "../assets/images/png/testimonial-pizza-img.png";
 import { TESTIMONIAL_AVATAR, TESTIMONIAL_DATA } from "../utils/helper";
 import Button from "./common/Button";

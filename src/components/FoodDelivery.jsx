@@ -5,7 +5,7 @@ import Heading from './common/Heading'
 import { FOODDELIVERY } from '../utils/helper'
 import Button from './common/Button'
 import Container from './common/Container'
-import { Line, Line2 } from '../utils/icon'
+import { Line2 } from '../utils/icon'
 import tomatoImg from '../assets/images/png/tomato-img.png'
 
 

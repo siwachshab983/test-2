@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from './common/Container'
 import Heading from './common/Heading'
-import { Line, Line2 } from '../utils/icon'
+import { Line2 } from '../utils/icon'
 import { GALLERY_DATA } from '../utils/helper.js'
 import Button from './common/Button.jsx'
 import pizzaSlice from '../assets/images/png/pizza-slice-3.png'

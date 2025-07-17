@@ -3,7 +3,7 @@ import Heading from './common/Heading';
 import Description from './common/Description';
 import Button from './common/Button';
 import { BESTSELLER_DATA } from '../utils/helper';
-import { Line, Line2 } from '../utils/icon';
+import { Line2 } from '../utils/icon';
 import Container from './common/Container';
 
 const BestSellers = () => {
