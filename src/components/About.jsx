@@ -29,15 +29,15 @@ const AboutUs = () => {
                             </div>
                             <Heading className="pt-2 text-custom-3xl md:text-5xl sm:text-4xl !leading-[120%] sm:text-start text-center" >Welcome to the Nest</Heading>
                             <ul className='list-disc lg:max-w-[558px] ml-6 pt-4 sm:text-start text-center'>
-                                <li><Description className="text-dark-gray"  >At PizzaNest, we believe that pizza is more than just food — it’s an emotion, a celebration, and comfort all rolled into one delicious slice. Founded with a passion for real ingredients and big flavors, we set out to bring handcrafted, oven-fresh pizzas to every corner of India.</Description></li>
-                                <li className='pt-3'><Description className="text-dark-gray" >Whether you're craving spicy paneer, a creamy cheese burst, or a fully loaded custom pizza made your way, we've got you covered. Each pizza is baked with love, topped with the freshest veggies, premium cheese, and authentic sauces — all delivered hot and fast, right to your doorstep.</Description></li>
+                                <li><Description className="text-dark-gray lg:max-w-none max-w-[650px]"  >At PizzaNest, we believe that pizza is more than just food — it’s an emotion, a celebration, and comfort all rolled into one delicious slice. Founded with a passion for real ingredients and big flavors, we set out to bring handcrafted, oven-fresh pizzas to every corner of India.</Description></li>
+                                <li className='pt-3'><Description className="text-dark-gray lg:max-w-none max-w-[650px]" >Whether you're craving spicy paneer, a creamy cheese burst, or a fully loaded custom pizza made your way, we've got you covered. Each pizza is baked with love, topped with the freshest veggies, premium cheese, and authentic sauces — all delivered hot and fast, right to your doorstep.</Description></li>
                             </ul>
                             <div className="flex flex-wrap mt-6 gap-4 sm:gap-6 lg:max-h-[135px] max-lg:justify-center">
                                 {ABOUT_US_CARDS_DATA.map((item, index) => (
                                     <div data-aos="fade-up" className={`${index === 1 ? "sm:mt-3" : ""} group `} key={index}>
                                         <div className="bg-off-white w-full min-w-[160px] !duration-500 sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 hover:shadow-[0px_5px_7px_0px_#F67A211F] shadow-[0px_1px_7px_0px_#F67A211F] relative rounded-xl">
                                             <div className="bg-[#FCECE2] relative z-10 size-[52px] mx-auto rounded-full flex justify-center items-center">{<item.img />}</div>
-                                            <p className='leading-[160%] relative z-10 text-center whitespace-nowrap text-[#474747] pt-2'>{item.title}</p>
+                                            <p className='leading-[160%] relative z-10 text-center whitespace-nowrap text-[#474747] pt-2 '>{item.title}</p>
                                             <img className='pointer-events-none absolute top-0 right-0 w-full h-full' src={cardBgImg} alt="cardBgImg" />
                                         </div>
                                     </div>
