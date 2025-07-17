@@ -39,17 +39,17 @@ const OurMenu = () => {
         <Heading className="text-center mt-2 text-custom-3xl md:text-5xl sm:text-4xl  !leading-[120%] mb-10 max-w-[550px] w-full" >Explore Flavours, Pick Your Cravings</Heading>
         <div className="flex flex-wrap justify-center sm:gap-6 gap-3 mb-10 w-full">
           {categories.map((category, i) => (
-            <Button
+            <button
               key={i}
               onClick={() => setActiveCategory(category)}
-              className={`sm:!px-5 !px-4 !py-[9px] sm:max-w-[170px] max-w-[140px] max-sm:!text-sm text-nowrap !leading-[22px] w-full rounded-full border
+              className={`sm:!px-5 !px-4 rounded-xl !py-[9px] sm:max-w-[170px] max-w-[140px] max-sm:!text-sm text-nowrap !leading-[22px] w-full rounded-full border
                   ${activeCategory === category
                   ? "bg-prime text-white border-transparent"
                   : "!bg-none !bg-white !text-light-gray !border-light-gray"
                 }`}
             >
               {category}
-            </Button>
+            </button>
           ))}
         </div>
 
