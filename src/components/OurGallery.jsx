@@ -25,7 +25,7 @@ const OurGallery = () => {
             {
               GALLERY_DATA.slice(0, 2).map((image, i) => (
                 <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                 </div>
               ))
             }
@@ -34,7 +34,7 @@ const OurGallery = () => {
             {
               GALLERY_DATA.slice(2, 3).map((image, i) => (
                 <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                 </div>
               ))
             }
@@ -42,7 +42,7 @@ const OurGallery = () => {
               {
                 GALLERY_DATA.slice(3, 5).map((image, i) => (
                   <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                    <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                    <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                   </div>
                 ))
               }
@@ -52,7 +52,7 @@ const OurGallery = () => {
             {
               GALLERY_DATA.slice(5, 8).map((image, i) => (
                 <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                 </div>
               ))
             }
@@ -61,7 +61,7 @@ const OurGallery = () => {
             {
               GALLERY_DATA.slice(3, 5).map((image, i) => (
                 <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                 </div>
               ))
             }
@@ -70,7 +70,7 @@ const OurGallery = () => {
             {
               GALLERY_DATA.slice(3, 4).map((image, i) => (
                 <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer w-full">
-                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                  <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                 </div>
               ))
             }
@@ -80,7 +80,7 @@ const OurGallery = () => {
               {
                 GALLERY_DATA.slice(0, 2).map((image, i) => (
                   <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                    <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                    <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                   </div>
                 ))
               }
@@ -89,7 +89,7 @@ const OurGallery = () => {
               {
                 GALLERY_DATA.slice(5, 8).map((image, i) => (
                   <div data-aos="fade-up" key={i} className="overflow-hidden rounded-xl group cursor-pointer">
-                    <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-300' src={image} alt="gallery-img" />
+                    <img className='w-full h-full object-cover group-hover:scale-110 transition-all duration-500' src={image} alt="gallery-img" />
                   </div>
                 ))
               }
