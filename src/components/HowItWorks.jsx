@@ -1,7 +1,7 @@
 import React from 'react'
 import Description from './common/Description'
 import Heading from './common/Heading'
-import { ArrowIcon, Line } from '../utils/icon'
+import { ArrowIcon, Line, Line2 } from '../utils/icon'
 import Button from './common/Button'
 import Container from './common/Container'
 import { HOW_IT_WORKS_DATA } from '../utils/helper'
@@ -12,11 +12,11 @@ const HowItWorks = () => {
       <Container>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
-            <Line />
+            <Line2 />
           </div>
           <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>How It Works</h4>
           <div className=" rotate-[180deg]">
-            <Line />
+            <Line2 />
           </div>
         </div>
         <Heading className={'font-semibold text-custom-3xl md:text-5xl sm:text-4xl  text-center mx-auto max-w-[569px] !leading-[120%]  mt-2'}>Your Perfect Pizza in Just 3 Easy Steps!</Heading>

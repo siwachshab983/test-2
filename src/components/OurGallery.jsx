@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from './common/Container'
 import Heading from './common/Heading'
-import { Line } from '../utils/icon'
+import { Line, Line2 } from '../utils/icon'
 import { GALLERY_DATA } from '../utils/helper.js'
 import Button from './common/Button.jsx'
 import pizzaSlice from '../assets/images/png/pizza-slice-3.png'
@@ -12,11 +12,11 @@ const OurGallery = () => {
       <Container className={'flex justify-center items-center flex-col'}>
         <div className=" flex justify-center items-center gap-1.5">
           <div className="">
-            <Line />
+            <Line2 />
           </div>
           <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Our Gallery</h4>
           <div className=" rotate-[180deg]">
-            <Line />
+            <Line2 />
           </div>
         </div>
         <Heading className="text-center mt-2 text-custom-3xl md:text-5xl sm:text-4xl  !leading-[120%] mb-10 max-w-[550px] w-full" >A Glimpse Into Our Pizza World</Heading>

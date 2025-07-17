@@ -3,7 +3,7 @@ import Heading from './common/Heading';
 import Description from './common/Description';
 import Button from './common/Button';
 import { BESTSELLER_DATA } from '../utils/helper';
-import { Line } from '../utils/icon';
+import { Line, Line2 } from '../utils/icon';
 import Container from './common/Container';
 
 const BestSellers = () => {
@@ -13,11 +13,11 @@ const BestSellers = () => {
         <Container>
           <div className=" flex justify-center items-center gap-1.5">
             <div>
-              <Line />
+              <Line2 />
             </div>
             <h4 className='text-prime-gradient text-lg font-bold leading-[22px]'>Best Sellers</h4>
             <div className=" rotate-[180deg] !opacity-100">
-              <Line />
+              <Line2 />
             </div>
           </div>
           <Heading className="text-center pt-2 text-custom-3xl md:text-5xl sm:text-4xl  !leading-[120%]" >Pizzas You Can’t Say No To</Heading>
