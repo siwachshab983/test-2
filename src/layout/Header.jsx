@@ -46,10 +46,10 @@ const Header = () => {
               </li>
             );
           })}
-          <li className='flex sm:hidden'><Button className={'hover:!bg-none hover:border-dark-gray !py-[15px] border hover:text-dark-gray hover:!scale-100 active:!scale-90'}>Contact Us</Button></li>
+          <li className='flex sm:hidden'><Button className={'active:!scale-90'}>Contact Us</Button></li>
         </ul>
         <div className="flex justify-center items-center gap-5">
-          <div className="sm:flex hidden"><Button className={'hover:!bg-none hover:border-dark-gray !py-[15px] border hover:text-dark-gray hover:!scale-100 active:!scale-90'}>Contact Us</Button></div>
+          <div className="sm:flex hidden"><Button className={'active:!scale-90'}>Contact Us</Button></div>
           <div onClick={toggleNavBar} className="z-50 lg:hidden flex flex-col justify-between w-7 h-5 cursor-pointer">
             <span className={`block h-1 rounded-3xl bg-prime transition-transform duration-300 ease-in-out ${isOpen && 'rotate-45 translate-y-2'}`}></span>
             <span className={`block h-1 rounded-3xl bg-prime transition-transform duration-300 ease-in-out ${isOpen && 'opacity-0'}`}></span>

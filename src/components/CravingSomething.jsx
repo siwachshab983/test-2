@@ -12,7 +12,7 @@ const CravingSomething = () => {
           <Description className="text-soft-gray max-w-[465px] text-center mx-auto pt-4">Your next favorite pizza is waiting. Freshly baked, flavor-packed, and delivered hot to your door — every single time.</Description>
           <div className="flex gap-4 sm:gap-6 mt-5.5 sm:mt-8 sm:flex-row flex-col  justify-center sm:items-start items-center">
             <Button className="px-[29px] sm:px-[33px] py-3.5 sm:max-w-none max-w-[300px] max-sm:w-full">Order Now</Button>
-            <Button className={'!bg-none btn-blur-opacity-1 !py-[15px] border border-white sm:max-w-none max-w-[300px] max-sm:w-full'}>View Full Menu</Button>
+            <button className={'!bg-none max-sm:w-full btn-blur-opacity-1 !py-[15px] border !border-white px-8 active:scale-90 relative z-10 duration-300 text-base font-semibold rounded-xl cursor-pointer text-white !leading-[137%]'}>View Full Menu</button>
           </div>
         </div>
       </div>

@@ -27,6 +27,7 @@ html {
   --color-dark-mud-gray: #373737;
   --color-black: #010101;
   --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  --color-prime-gradient-hover: linear-gradient(85.95deg, #FF902E 1.54%, #EC6112 98.46%);
   --text-custom-3xl: 28px;
 }
 
@@ -35,11 +36,32 @@ html {
 }
 
 .bg-prime {
-  background: var(--color-prime-gradient) !important;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.bg-prime-hover:hover {
-  background: var(--color-prime-gradient) !important;
+.bg-prime::before,
+.bg-prime::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.bg-prime::before {
+  background: var(--color-prime-gradient);
+  opacity: 1;
+}
+
+.bg-prime::after {
+  background: var(--color-prime-gradient-hover);
+  opacity: 0;
+}
+
+.bg-prime:hover::after {
+  opacity: 1;
 }
 
 .text-prime-gradient {

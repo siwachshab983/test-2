@@ -35,7 +35,7 @@ const AboutUs = () => {
                             <div className="flex flex-wrap mt-6 gap-4 sm:gap-6 lg:max-h-[135px] max-lg:justify-center">
                                 {ABOUT_US_CARDS_DATA.map((item, index) => (
                                     <div data-aos="fade-up" className={`${index === 1 ? "sm:mt-3" : ""} group `} key={index}>
-                                        <div className="bg-off-white w-full min-w-[160px] group-hover:scale-105 group-hover:-translate-y-3 !duration-300 sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 shadow-[0px_1px_7px_0px_#F67A211F] relative rounded-xl">
+                                        <div className="bg-off-white w-full min-w-[160px] !duration-500 sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 hover:shadow-[0px_5px_7px_0px_#F67A211F] shadow-[0px_1px_7px_0px_#F67A211F] relative rounded-xl">
                                             <div className="bg-[#FCECE2] relative z-10 size-[52px] mx-auto rounded-full flex justify-center items-center">{<item.img />}</div>
                                             <p className='leading-[160%] relative z-10 text-center whitespace-nowrap text-[#474747] pt-2'>{item.title}</p>
                                             <img className='pointer-events-none absolute top-0 right-0 w-full h-full' src={cardBgImg} alt="cardBgImg" />

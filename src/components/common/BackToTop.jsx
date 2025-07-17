@@ -21,8 +21,7 @@ const BackToTop = () => {
         <button
             onClick={handleBackToTop}
             aria-label="Back to top"
-            className="
-        fixed bottom-8 right-8 size-[50px] text-2xl z-[9] bg-prime text-white rounded-full shadow-lg cursor-pointer transition-all duration-300 ease-linear hover:scale-110">
+            className="!fixed bottom-8 pizza-cheese right-8 size-[50px] text-2xl z-[9] bg-prime text-white rounded-full shadow-lg cursor-pointer transition-all duration-300 ease-linear hover:scale-110">
             ↑
         </button>
     );
