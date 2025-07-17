@@ -18,12 +18,12 @@ const Footer = () => {
               <div className="flex items-center gap-5 mt-4 sm:mt-6 sm:justify-start justify-center">
                 {SOCIAL_ICON.map((item, index) => (
                   <div className="group cursor-pointer" key={index}>
-                    <a key={index} className='size-[52px] group-hover:-translate-y-1 duration-300 bg-prime rounded-full flex justify-center items-center' target='_blank' href={item.socialLink}>{<item.icon />}</a>
+                    <a key={index} className='sm:size-[52px] size-10 group-hover:-translate-y-1 duration-300 bg-prime rounded-full flex justify-center items-center' target='_blank' href={item.socialLink}>{<item.icon />}</a>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="flex max-w-[312px] sm:mx-0 mx-auto gap-2 w-full justify-between">
+            <div className="flex sm:max-w-[312px] sm:mx-0 mx-auto gap-2 w-full sm:justify-between justify-around">
               <ul>
                 <li className='text-black leading-[26px] mb-1'>Quick Links</li>
                 {QUICK_LINKS.map((link, i) => {

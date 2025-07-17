@@ -49,7 +49,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="lg:absolute bottom-0 right-0 max-lg:mt-4 bg-[url(./assets/images/png/testimonial-slider-bg-img.png)] bg-no-repeat bg-cover bg-center ">
+        <div className="lg:absolute relative bottom-0 right-0 max-lg:mt-4 max-lg:max-w-[650px] mx-auto bg-[url(./assets/images/png/testimonial-slider-bg-img.png)] bg-no-repeat bg-cover bg-center ">
           <Swiper
             modules={[Navigation]}
             loop={true}
@@ -70,10 +70,10 @@ const Testimonial = () => {
             ))}
           </Swiper>
           <div className="flex items-center absolute z-10 bottom-6 md:left-6 mt-6 gap-1 left-1/2 max-md:-translate-x-1/2">
-            <Button className="prevBtn hover:!bg-none group hover:!bg-light-white hover:!scale-100 !rounded-[4px] border !px-[15px] !py-3.5 flex items-center justify-center transition">
+            <Button className="prevBtn !rounded-[4px] !px-[15px] !py-3.5 flex items-center justify-center transition">
               <RightArrow />
             </Button>
-            <Button className="nextBtn hover:!bg-none group hover:!bg-light-white hover:!scale-100 !rounded-[4px] text-white flex items-center justify-center !px-[15px] !py-3.5 transition">
+            <Button className="nextBtn !rounded-[4px] flex items-center justify-center !px-[15px] !py-3.5 transition">
               <LeftArrow />
             </Button>
           </div>

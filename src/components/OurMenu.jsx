@@ -42,7 +42,7 @@ const OurMenu = () => {
             <button
               key={i}
               onClick={() => setActiveCategory(category)}
-              className={`sm:!px-5 !px-4 rounded-xl !py-[9px] sm:max-w-[170px] max-w-[140px] max-sm:!text-sm text-nowrap !leading-[22px] w-full border
+              className={`sm:!px-5 !px-4 rounded-xl cursor-pointer !py-[9px] sm:max-w-[170px] max-w-[140px] max-sm:!text-sm text-nowrap !leading-[22px] w-full border
                   ${activeCategory === category
                   ? "bg-prime text-white border-transparent"
                   : "!bg-none !bg-white !text-light-gray !border-light-gray"
