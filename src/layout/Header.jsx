@@ -31,7 +31,7 @@ const Header = () => {
         <ul className={`flex justify-center items-center gap-6 max-lg:min-h-screen max-lg:w-full max-lg:fixed top-0 duration-300 max-lg:flex-col z-50 bg-white ${isOpen ? 'right-0' : '-right-full'}`}>
           {NAVLINKS.map((link, index) => {
             return (
-              <li key={index} onClick={()=>toggleNavBar(false)} className="relative link-hover group">
+              <li key={index} onClick={() => toggleNavBar(false)} className="relative link-hover group">
                 <a
                   href={link.id}
                   className={
@@ -50,21 +50,10 @@ const Header = () => {
         </ul>
         <div className="flex justify-center items-center gap-5">
           <div className="sm:flex hidden"><Button className={'hover:!bg-none hover:border-dark-gray !py-[15px] border hover:text-dark-gray hover:!scale-100 active:!scale-90'}>Contact Us</Button></div>
-          <div onClick={toggleNavBar} className="lg:hidden flex flex-col gap-[5px] z-50 cursor-pointer">
-            <span
-              className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${isOpen ? "rotate-[45deg] origin-left" : ""
-                }`}
-            ></span>
-            <span
-              className={`w-[30px] h-[5px] rounded transition-all ${isOpen
-                ? "bg-transparent"
-                : "bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]"
-                }`}
-            ></span>
-            <span
-              className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${isOpen ? "-rotate-[42deg] origin-left" : ""
-                }`}
-            ></span>
+          <div onClick={toggleNavBar} className="z-50 lg:hidden flex flex-col justify-between w-7 h-5 cursor-pointer">
+            <span className={`block h-1 rounded-3xl bg-prime transition-transform duration-300 ease-in-out ${isOpen && 'rotate-45 translate-y-2'}`}></span>
+            <span className={`block h-1 rounded-3xl bg-prime transition-transform duration-300 ease-in-out ${isOpen && 'opacity-0'}`}></span>
+            <span className={`block h-1 rounded-3xl bg-prime transition-transform duration-300 ease-in-out ${isOpen && '-rotate-45 -translate-y-2'}`}></span>
           </div>
         </div>
       </Container>

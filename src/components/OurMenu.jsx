@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MENU_DATA } from "../utils/helper.js";
 import Button from "./common/Button.jsx";
 import Container from './common/Container.jsx'
-import { Line, Line2, RatingSvg } from "../utils/icon.jsx";
+import { Cart, Line, Line2, RatingSvg } from "../utils/icon.jsx";
 import Heading from "./common/Heading.jsx";
 import pizzaSlice from "../assets/images/png/pizza-slice-2.png";
 
@@ -55,7 +55,7 @@ const OurMenu = () => {
 
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {MENU_DATA.map((item, i) => (
-            <div data-aos="fade-up" key={i} className=" group">
+            <div data-aos="fade-up" key={i} className=" group relative">
               <img className="object-cover pointer-events-none w-full" src={item.image} alt="pizza" />
               <div className="max-w-[324px] max-lg:min-h-[209px] p-5 mx-auto w-full bg-white border border-black/10 rounded-[8px] -translate-y-[29px] flex flex-col justify-center items-center">
                 <p className="text-prime-gradient lg:text-2xl text-xl font-semibold leading-[34px] text-center">{item.price}</p>
@@ -65,9 +65,12 @@ const OurMenu = () => {
                 <p className="xl:text-base text-sm text-unmuted-gray leading-[160%] text-center px-2 mb-1">{item.desc}</p>
                 <RatingSvg />
               </div>
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-col gap-1.5 absolute top-2 right-2">
                 <div className="cursor-pointer">
-
+                  <Cart/>
+                </div>
+                <div className="cursor-pointer">
+                  <Cart/>
                 </div>
               </div>
             </div>
